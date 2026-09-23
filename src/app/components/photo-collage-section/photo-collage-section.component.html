@@ -1,0 +1,34 @@
+<section
+  [id]="section().id"
+  class="section"
+  [class]="'section--' + section().background"
+  [class.section--dotted]="section().dotted"
+>
+  <div class="section-inner">
+    <div class="section__heading">
+      <h2>{{ section().heading }}</h2>
+      @if (section().intro) {
+        <p>{{ section().intro }}</p>
+      }
+    </div>
+    <div class="collage">
+      @for (photo of section().photos; track photo.fileName) {
+        <figure class="collage__item">
+          <button
+            type="button"
+            class="collage__photo-button"
+            [attr.aria-label]="'Enlarge photo: ' + photo.caption"
+            (click)="openLightbox($event, photoPath(photo.fileName), photo.altText)"
+          >
+            <img
+              [src]="photoPath(photo.fileName)"
+              [alt]="photo.altText"
+              (error)="onImageLoadError($event, photo.fallbackLabel)"
+            />
+          </button>
+          <figcaption class="collage__caption">{{ photo.caption }}</figcaption>
+        </figure>
+      }
+    </div>
+  </div>
+</section>

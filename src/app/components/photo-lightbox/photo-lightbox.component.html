@@ -1,0 +1,20 @@
+@if (openPhoto(); as photo) {
+  <div
+    class="lightbox is-open"
+    role="dialog"
+    aria-modal="true"
+    [attr.aria-label]="photo.altText"
+    @fadeScaleIn
+  >
+    <button
+      class="lightbox__backdrop"
+      type="button"
+      aria-label="Close photo"
+      (click)="close()"
+    ></button>
+    <button class="lightbox__close" type="button" aria-label="Close photo" (click)="close()">
+      &times;
+    </button>
+    <img class="lightbox__image" [src]="photo.imageSource" [alt]="photo.altText" @scaleIn />
+  </div>
+}

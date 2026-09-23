@@ -1,0 +1,47 @@
+.cta {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-accent-deep), var(--color-accent));
+}
+
+.cta h2 {
+  color: #fff;
+}
+
+.cta__details {
+  display: inline-flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.5rem 0 2rem;
+  font-size: 1.1rem;
+}
+
+.cta__details span {
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  padding: 0.4rem 0.9rem;
+}
+
+.cta__button {
+  display: inline-block;
+  background: #fff;
+  color: var(--color-accent-deep);
+  font-family: var(--font-script);
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.6rem 2rem;
+  border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.cta__button:hover {
+  transform: translateY(-3px);
+}
+
+.cta__note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}

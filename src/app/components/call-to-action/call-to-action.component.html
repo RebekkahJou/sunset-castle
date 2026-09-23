@@ -1,0 +1,17 @@
+<section id="inquire" class="section cta">
+  <div class="section-inner">
+    <h2>Make This Sunset Castle Yours</h2>
+    <p>A slice of happiness on a hill in Nutley, NJ &mdash; ready for its next chapter.</p>
+    <div class="cta__details">
+      <span>Price: {{ listingDetails.price }}</span>
+      <span>Beds: {{ listingDetails.bedroomCount }}</span>
+      <span>Baths: {{ listingDetails.bathroomCount }}</span>
+      <span>Sq Ft: {{ listingDetails.squareFootage }}</span>
+    </div>
+    <br />
+    <a class="cta__button" [href]="listingDetails.listingUrl" target="_blank" rel="noopener"
+      >View the Listing</a
+    >
+    <p class="cta__note">Listing link and details coming soon.</p>
+  </div>
+</section>

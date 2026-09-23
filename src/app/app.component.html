@@ -1,0 +1,15 @@
+<app-site-nav />
+
+<app-hero />
+
+<app-welcome-intro />
+
+@for (section of contentSections; track section.id) {
+  <app-photo-collage-section [section]="section" />
+}
+
+<app-call-to-action />
+
+<app-site-footer />
+
+<app-photo-lightbox />

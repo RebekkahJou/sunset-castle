@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+/* ---------- Design tokens ---------- */
+:root {
+  --color-cream: #faf5ec;
+  --color-blush: #f7e4dc;
+  --color-mint: #e6efe6;
+  --color-butter: #fbf1d9;
+  --color-lavender: #ece6f2;
+  --color-ink: #3c3327;
+  --color-ink-soft: #6b5f4f;
+  --color-accent: #b8763f;
+  --color-accent-deep: #8a5a2c;
+  --color-card-shadow: rgba(60, 51, 39, 0.18);
+
+  --font-script: 'Dancing Script', cursive;
+  --font-body: 'EB Garamond', serif;
+
+  --section-radius: 6px;
+  --max-content-width: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--color-accent-deep);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-script);
+  font-weight: 700;
+  color: var(--color-accent-deep);
+  margin: 0 0 0.5em;
+}
+
+.section-inner {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+/* ---------- Shared section theming ---------- */
+/* Global (not component-scoped) because every page section reuses these classes. */
+.section {
+  position: relative;
+}
+
+.section--dotted::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(184, 118, 63, 0.25) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.section--cream {
+  background: var(--color-cream);
+}
+.section--blush {
+  background: var(--color-blush);
+}
+.section--mint {
+  background: var(--color-mint);
+}
+.section--butter {
+  background: var(--color-butter);
+}
+.section--lavender {
+  background: var(--color-lavender);
+}
+
+.section__heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section__heading h2 {
+  font-size: clamp(2.25rem, 4vw, 3rem);
+}
+
+.section__heading p {
+  font-style: italic;
+  color: var(--color-ink-soft);
+  max-width: 640px;
+  margin: 0 auto;
+}
