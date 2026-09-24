@@ -1,0 +1,38 @@
+.recipe-card {
+  text-align: left;
+  max-width: 480px;
+}
+
+.recipe-card__title {
+  margin-bottom: 0.25em;
+}
+
+.recipe-card__description {
+  font-style: italic;
+  color: var(--color-ink-soft);
+  margin-top: 0;
+}
+
+.recipe-card__heading {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-accent-deep);
+  margin: 1.25rem 0 0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.recipe-card__list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.recipe-card__list li {
+  margin-bottom: 0.4rem;
+}
+
+.recipe-card__list--numbered li {
+  margin-bottom: 0.75rem;
+}

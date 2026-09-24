@@ -16,8 +16,8 @@
         <button
           type="button"
           class="collage__photo-button"
-          [attr.aria-label]="'Enlarge photo: ' + focalPhoto.caption"
-          (click)="openLightbox($event, photoPath(focalPhoto.fileName), focalPhoto.altText)"
+          [attr.aria-label]="ariaLabelFor(focalPhoto)"
+          (click)="onPhotoActivated($event, focalPhoto)"
         >
           <img
             [src]="photoPath(focalPhoto.fileName)"
@@ -25,7 +25,12 @@
             (error)="onImageLoadError($event, focalPhoto.fallbackLabel)"
           />
         </button>
-        <figcaption class="collage__caption">{{ focalPhoto.caption }}</figcaption>
+        <figcaption
+          class="collage__caption"
+          [class.collage__caption--link]="isLinkStyled(focalPhoto)"
+        >
+          {{ focalPhoto.caption }}
+        </figcaption>
       </figure>
     }
     <div class="collage">
@@ -34,8 +39,8 @@
           <button
             type="button"
             class="collage__photo-button"
-            [attr.aria-label]="'Enlarge photo: ' + photo.caption"
-            (click)="openLightbox($event, photoPath(photo.fileName), photo.altText)"
+            [attr.aria-label]="ariaLabelFor(photo)"
+            (click)="onPhotoActivated($event, photo)"
           >
             <img
               [src]="photoPath(photo.fileName)"
@@ -43,7 +48,9 @@
               (error)="onImageLoadError($event, photo.fallbackLabel)"
             />
           </button>
-          <figcaption class="collage__caption">{{ photo.caption }}</figcaption>
+          <figcaption class="collage__caption" [class.collage__caption--link]="isLinkStyled(photo)">
+            {{ photo.caption }}
+          </figcaption>
         </figure>
       }
     </div>

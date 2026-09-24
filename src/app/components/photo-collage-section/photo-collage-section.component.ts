@@ -1,12 +1,19 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { CollagePhoto } from '../../models/collage-photo.model';
 import { ContentSection } from '../../models/content-section.model';
 import { LightboxService } from '../../services/lightbox.service';
+import { ModalService } from '../../services/modal.service';
 
 /**
  * Renders one full-width page section: a heading, an optional intro paragraph,
  * and a tilted photo-collage grid. Reused for every collage section on the page
  * (Parks & Nature, Food & Local Spots, Seasons & Local Events, etc.) so that
  * section content lives entirely in `site-content.data.ts` rather than markup.
+ *
+ * Clicking a photo does one of three things, in priority order:
+ * 1. `externalLink` set — opens the URL in a new tab.
+ * 2. `modalContent` set — opens the shared modal (a recipe or marquee).
+ * 3. Neither — opens the photo full-screen in the lightbox (the default).
  */
 @Component({
   selector: 'app-photo-collage-section',
@@ -18,18 +25,47 @@ import { LightboxService } from '../../services/lightbox.service';
 export class PhotoCollageSectionComponent {
   readonly section = input.required<ContentSection>();
 
-  constructor(private readonly lightboxService: LightboxService) {}
+  constructor(
+    private readonly lightboxService: LightboxService,
+    private readonly modalService: ModalService,
+  ) {}
 
   photoPath(fileName: string): string {
     return `photos/${fileName}`;
   }
 
-  openLightbox(event: MouseEvent, imageSource: string, altText: string): void {
+  /** True for photos that navigate away or open the modal — styled like a link. Plain lightbox zoom doesn't count. */
+  isLinkStyled(photo: CollagePhoto): boolean {
+    return Boolean(photo.externalLink || photo.modalContent);
+  }
+
+  ariaLabelFor(photo: CollagePhoto): string {
+    if (photo.externalLink) {
+      return `Visit link: ${photo.caption}`;
+    }
+    if (photo.modalContent) {
+      return `Open additional material: ${photo.caption}`;
+    }
+    return `Enlarge photo: ${photo.caption}`;
+  }
+
+  onPhotoActivated(event: MouseEvent, photo: CollagePhoto): void {
     const clickedImage = event.target as HTMLImageElement;
     if (clickedImage.classList.contains('is-missing')) {
       return;
     }
-    this.lightboxService.open(imageSource, altText);
+
+    if (photo.externalLink) {
+      window.open(photo.externalLink, '_blank', 'noopener');
+      return;
+    }
+
+    if (photo.modalContent) {
+      this.modalService.open(photo.modalContent);
+      return;
+    }
+
+    this.lightboxService.open(this.photoPath(photo.fileName), photo.altText);
   }
 
   onImageLoadError(event: Event, fallbackLabel: string): void {

@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CallToActionComponent } from './components/call-to-action/call-to-action.component';
 import { HeroComponent } from './components/hero/hero.component';
+import { ModalComponent } from './components/modal/modal.component';
 import { PhotoCollageSectionComponent } from './components/photo-collage-section/photo-collage-section.component';
 import { PhotoLightboxComponent } from './components/photo-lightbox/photo-lightbox.component';
 import { SiteFooterComponent } from './components/site-footer/site-footer.component';
@@ -19,6 +20,7 @@ import { contentSections } from './data/site-content.data';
     CallToActionComponent,
     SiteFooterComponent,
     PhotoLightboxComponent,
+    ModalComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

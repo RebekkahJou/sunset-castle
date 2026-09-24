@@ -1,0 +1,42 @@
+@if (content(); as modalContent) {
+  <div
+    class="modal is-open"
+    role="dialog"
+    aria-modal="true"
+    [attr.aria-label]="
+      modalContent.kind === 'recipe' ? modalContent.recipe.title : modalContent.title
+    "
+    @fadeScaleIn
+  >
+    <button class="modal__backdrop" type="button" aria-label="Close" (click)="close()"></button>
+    <div class="modal__panel" @scaleIn>
+      <button class="modal__close" type="button" aria-label="Close" (click)="close()">
+        &times;
+      </button>
+
+      @if (modalContent.kind === 'recipe') {
+        <app-recipe-card [recipe]="modalContent.recipe" />
+      } @else {
+        <h3 class="modal__marquee-title">{{ modalContent.title }}</h3>
+        <div class="marquee" (mouseenter)="pauseMarquee()" (mouseleave)="resumeMarquee()">
+          <div class="marquee__track" [class.is-paused]="isMarqueePaused()">
+            @for (item of loopedMarqueeItems(modalContent.items); track $index) {
+              <div class="marquee__item">
+                @if (item.kind === 'photo') {
+                  <img [src]="photoPath(item.fileName)" [alt]="item.altText" />
+                  @if (item.caption) {
+                    <p class="marquee__caption">{{ item.caption }}</p>
+                  }
+                } @else {
+                  <div class="marquee__recipe">
+                    <app-recipe-card [recipe]="item.recipe" />
+                  </div>
+                }
+              </div>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+}
