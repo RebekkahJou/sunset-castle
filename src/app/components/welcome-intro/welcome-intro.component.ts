@@ -6,6 +6,7 @@ import {
   welcomeIntroImageFileName,
   welcomeIntroText,
 } from '../../data/site-content.data';
+import { buildPhotoSrcset, photoPath } from '../../utils/photo-srcset';
 
 @Component({
   selector: 'app-welcome-intro',
@@ -18,6 +19,7 @@ import {
 export class WelcomeIntroComponent {
   protected readonly welcomeIntroText = welcomeIntroText;
   protected readonly houseAddress = houseAddress;
-  protected readonly welcomeIntroImageFileName = welcomeIntroImageFileName;
   protected readonly welcomeIntroImageAltText = welcomeIntroImageAltText;
+  protected readonly welcomeIntroImageSrc = photoPath(welcomeIntroImageFileName);
+  protected readonly welcomeIntroImageSrcset = buildPhotoSrcset(welcomeIntroImageFileName);
 }

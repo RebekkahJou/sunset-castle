@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component, HostListener, signal } from '@angul
 import { ImageSkeletonDirective } from '../../directives/image-skeleton.directive';
 import { MarqueeItem } from '../../models/modal-content.model';
 import { ModalService } from '../../services/modal.service';
+import { buildPhotoSrcset, photoPath } from '../../utils/photo-srcset';
 import { RecipeCardComponent } from '../recipe-card/recipe-card.component';
 
 @Component({
@@ -48,9 +49,8 @@ export class ModalComponent {
     this.isMarqueePaused.set(false);
   }
 
-  photoPath(fileName: string): string {
-    return `photos/${fileName}`;
-  }
+  protected readonly photoPath = photoPath;
+  protected readonly buildPhotoSrcset = buildPhotoSrcset;
 
   /** Duplicates the marquee items once so the CSS scroll animation can loop seamlessly. */
   loopedMarqueeItems(items: readonly MarqueeItem[]): readonly MarqueeItem[] {

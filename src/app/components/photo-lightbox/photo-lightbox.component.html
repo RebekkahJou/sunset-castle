@@ -18,7 +18,9 @@
     <img
       appImageSkeleton
       class="lightbox__image"
-      [src]="photo.imageSource"
+      [src]="photoPath(photo.fileName)"
+      [srcset]="buildPhotoSrcset(photo.fileName)"
+      sizes="90vw"
       [alt]="photo.altText"
       @scaleIn
     />

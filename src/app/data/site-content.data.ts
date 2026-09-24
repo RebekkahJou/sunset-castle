@@ -276,8 +276,8 @@ export const contentSections: readonly ContentSection[] = [
             {
               kind: 'photo',
               fileName: 'apple-pie-leaf-crust.jpg',
-              altText: 'A homemade pie with a decorative leaf-cutout crust',
-              caption: 'Decorative leaf crust',
+              altText: 'A homemade pie with a decorative balloon-cutout crust',
+              caption: 'Experimenting with decorative crusts',
             },
             {
               kind: 'recipe',

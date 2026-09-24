@@ -8,7 +8,9 @@
     <div class="intro__photo">
       <img
         appImageSkeleton
-        [src]="'photos/' + welcomeIntroImageFileName"
+        [src]="welcomeIntroImageSrc"
+        [srcset]="welcomeIntroImageSrcset"
+        sizes="(max-width: 860px) 90vw, 500px"
         [alt]="welcomeIntroImageAltText"
       />
     </div>

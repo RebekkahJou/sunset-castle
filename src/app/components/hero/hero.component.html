@@ -2,7 +2,9 @@
   <img
     appImageSkeleton
     class="hero__image"
-    [src]="'photos/' + heroImageFileName"
+    [src]="heroImageSrc"
+    [srcset]="heroImageSrcset"
+    sizes="100vw"
     [alt]="heroImageAltText"
   />
   <div class="hero__content">

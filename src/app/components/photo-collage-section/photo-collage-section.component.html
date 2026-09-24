@@ -22,6 +22,8 @@
           <img
             appImageSkeleton
             [src]="photoPath(focalPhoto.fileName)"
+            [srcset]="buildPhotoSrcset(focalPhoto.fileName)"
+            sizes="(max-width: 640px) 80vw, 720px"
             [alt]="focalPhoto.altText"
             loading="lazy"
             decoding="async"
@@ -48,6 +50,8 @@
             <img
               appImageSkeleton
               [src]="photoPath(photo.fileName)"
+              [srcset]="buildPhotoSrcset(photo.fileName)"
+              sizes="(max-width: 480px) 45vw, 320px"
               [alt]="photo.altText"
               loading="lazy"
               decoding="async"

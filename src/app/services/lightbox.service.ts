@@ -2,7 +2,9 @@ import { Injectable, signal } from '@angular/core';
 
 /** The photo currently shown in the full-screen lightbox, or null when closed. */
 export interface OpenLightboxPhoto {
-  readonly imageSource: string;
+  /** File name inside public/photos/ — kept raw (not a resolved path) so the
+   *  lightbox itself can build a srcset for it, same as every other photo. */
+  readonly fileName: string;
   readonly altText: string;
 }
 
@@ -16,8 +18,8 @@ export class LightboxService {
 
   readonly openPhoto = this.openPhotoSignal.asReadonly();
 
-  open(imageSource: string, altText: string): void {
-    this.openPhotoSignal.set({ imageSource, altText });
+  open(fileName: string, altText: string): void {
+    this.openPhotoSignal.set({ fileName, altText });
   }
 
   close(): void {

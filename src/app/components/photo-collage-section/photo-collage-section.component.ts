@@ -4,6 +4,7 @@ import { CollagePhoto } from '../../models/collage-photo.model';
 import { ContentSection } from '../../models/content-section.model';
 import { LightboxService } from '../../services/lightbox.service';
 import { ModalService } from '../../services/modal.service';
+import { buildPhotoSrcset, photoPath } from '../../utils/photo-srcset';
 
 @Component({
   selector: 'app-photo-collage-section',
@@ -21,9 +22,8 @@ export class PhotoCollageSectionComponent {
     private readonly modalService: ModalService,
   ) {}
 
-  photoPath(fileName: string): string {
-    return `photos/${fileName}`;
-  }
+  protected readonly photoPath = photoPath;
+  protected readonly buildPhotoSrcset = buildPhotoSrcset;
 
   /** True for photos that navigate away or open the modal — styled like a link. */
   isLinkStyled(photo: CollagePhoto): boolean {
@@ -56,7 +56,7 @@ export class PhotoCollageSectionComponent {
       return;
     }
 
-    this.lightboxService.open(this.photoPath(photo.fileName), photo.altText);
+    this.lightboxService.open(photo.fileName, photo.altText);
   }
 
   onImageLoadError(event: Event, fallbackLabel: string): void {

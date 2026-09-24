@@ -2,6 +2,7 @@ import { animate, style, transition, trigger } from '@angular/animations';
 import { ChangeDetectionStrategy, Component, HostListener } from '@angular/core';
 import { ImageSkeletonDirective } from '../../directives/image-skeleton.directive';
 import { LightboxService } from '../../services/lightbox.service';
+import { buildPhotoSrcset, photoPath } from '../../utils/photo-srcset';
 
 @Component({
   selector: 'app-photo-lightbox',
@@ -32,6 +33,9 @@ export class PhotoLightboxComponent {
   constructor(private readonly lightboxService: LightboxService) {
     this.openPhoto = this.lightboxService.openPhoto;
   }
+
+  protected readonly photoPath = photoPath;
+  protected readonly buildPhotoSrcset = buildPhotoSrcset;
 
   close(): void {
     this.lightboxService.close();
