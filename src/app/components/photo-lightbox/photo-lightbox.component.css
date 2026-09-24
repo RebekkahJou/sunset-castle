@@ -24,6 +24,7 @@
   z-index: 1;
   max-width: min(90vw, 1100px);
   max-height: 85vh;
+  max-height: 85dvh;
   object-fit: contain;
   border-radius: 4px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
@@ -33,12 +34,24 @@
 .lightbox__close {
   position: absolute;
   z-index: 2;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
   background: none;
   border: none;
   color: #fff;
   font-size: 2rem;
   line-height: 1;
   cursor: pointer;
+  touch-action: manipulation;
+}
+
+@media (max-width: 480px) {
+  .lightbox {
+    padding: 0.75rem;
+  }
 }

@@ -28,21 +28,39 @@
   padding: 2.5rem 2rem 2rem;
   max-width: min(92vw, 760px);
   max-height: 88vh;
+  max-height: 88dvh;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   text-align: center;
 }
 
 .modal__close {
   position: absolute;
-  top: 0.75rem;
-  right: 1rem;
+  top: 0.25rem;
+  right: 0.25rem;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
   background: none;
   border: none;
   color: var(--color-ink);
   font-size: 2rem;
   line-height: 1;
   cursor: pointer;
+  touch-action: manipulation;
+}
+
+@media (max-width: 480px) {
+  .modal {
+    padding: 0.75rem;
+  }
+
+  .modal__panel {
+    padding: 2.75rem 1rem 1.25rem;
+  }
 }
 
 .modal__marquee-title {
@@ -103,6 +121,7 @@
 .marquee__recipe {
   height: 260px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   padding: 0.25rem 0.5rem;
 }
 
@@ -113,5 +132,16 @@
 @media (prefers-reduced-motion: reduce) {
   .marquee__track {
     animation: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee__item {
+    width: 230px;
+  }
+
+  .marquee__item img,
+  .marquee__recipe {
+    height: 200px;
   }
 }

@@ -25,7 +25,7 @@ export const contentSections: readonly ContentSection[] = [
     navLabel: 'Flowers abound',
     heading: 'Flowers Abound',
     intro:
-      'As the winter fades, crocuses peek forth, purple and white, across the garden. Days turn into weeks and then sweet hyacinths perfume the air; then tulips join the symphony. With the tulips come the golden forsythia, siberial quill, and vibrant sage, bursting into spring color. Luscious lavender and stunning baptisia follow, and with them the chive flowers as delicious as they are beautiful. Summer flowers like roses and liatris and lilies are not far behind, and then late summer begonias and zinnias and black-eyed susans take over, the garden season bright from start finish.',
+      'As the winter fades, crocuses peek forth, purple and white, across the garden. Days turn into weeks and then sweet hyacinths perfume the air; then tulips join the symphony. With the tulips come the golden forsythia, siberian squill, and vibrant sage, bursting into spring color. Luscious lavender and stunning baptisia follow, and with them the chive flowers as delicious as they are beautiful. Summer flowers like roses and liatris and lilies are not far behind, and then late summer begonias and zinnias and black-eyed susans take over, the garden season bright from start finish.',
     background: 'lavender',
     photos: [
       {
@@ -419,6 +419,7 @@ export const contentSections: readonly ContentSection[] = [
         altText: 'A Statue of Liberty display inside the SEA LIFE aquarium at American Dream',
         caption: 'SEA LIFE at American Dream',
         fallbackLabel: 'SEA LIFE at American Dream',
+        externalLink: 'https://www.visitsealife.com/new-jersey/',
       },
       {
         fileName: 'zoo-cheetah.jpg',
@@ -451,6 +452,7 @@ export const contentSections: readonly ContentSection[] = [
         altText: 'A Statue of Liberty display at Legoland NY',
         caption: 'Legoland only an hour away',
         fallbackLabel: 'Statue of Liberty made of Legos',
+        externalLink: 'https://www.legoland.com/new-york/',
       },
       {
         fileName: 'beach-sunrise-pier.jpg',
@@ -467,8 +469,9 @@ export const contentSections: readonly ContentSection[] = [
       {
         fileName: 'strawberries.jpg',
         altText: 'Crates full of freshly picked strawberries',
-        caption: 'Strawberry picking at Hillsview Farmstand',
+        caption: 'Strawberry picking at Hillview Farms',
         fallbackLabel: 'Strawberry picking',
+        externalLink: 'https://hillview-farms.com/',
       },
       {
         fileName: 'bronx-zoo.jpg',

@@ -49,8 +49,10 @@
   max-width: 100%;
 }
 
-.collage__item:hover {
-  transform: translateY(-6px) rotate(0deg) !important;
+@media (hover: hover) and (pointer: fine) {
+  .collage__item:hover {
+    transform: translateY(-6px) rotate(0deg) !important;
+  }
 }
 
 .collage__item:nth-child(3n + 1) {
@@ -71,6 +73,7 @@
   background: none;
   cursor: pointer;
   font: inherit;
+  touch-action: manipulation;
 }
 
 .collage__photo-button:focus-visible {

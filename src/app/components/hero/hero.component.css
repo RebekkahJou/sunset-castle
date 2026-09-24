@@ -1,10 +1,14 @@
 .hero {
   position: relative;
+  /* dvh accounts for the iOS/Android address bar showing/hiding; vh is the fallback
+     for browsers that don't support it yet. */
   min-height: 92vh;
+  min-height: 92dvh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 2rem 1.25rem;
   background: linear-gradient(180deg, rgba(60, 51, 39, 0.35), rgba(60, 51, 39, 0.15));
   color: #fff;
   overflow: hidden;

@@ -18,7 +18,13 @@
         <app-recipe-card [recipe]="modalContent.recipe" />
       } @else {
         <h3 class="modal__marquee-title">{{ modalContent.title }}</h3>
-        <div class="marquee" (mouseenter)="pauseMarquee()" (mouseleave)="resumeMarquee()">
+        <div
+          class="marquee"
+          (mouseenter)="pauseMarquee()"
+          (mouseleave)="resumeMarquee()"
+          (touchstart)="pauseMarquee()"
+          (touchend)="resumeMarquee()"
+        >
           <div class="marquee__track" [class.is-paused]="isMarqueePaused()">
             @for (item of loopedMarqueeItems(modalContent.items); track $index) {
               <div class="marquee__item">
