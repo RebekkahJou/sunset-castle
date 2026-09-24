@@ -1,6 +1,8 @@
 <nav class="site-nav">
   <div class="site-nav__inner">
-    <a href="#top" class="site-nav__brand">Sunset Castle</a>
+    <a href="#top" class="site-nav__brand" (click)="navigateToSection($event, 'top')"
+      >Sunset Castle</a
+    >
     <button
       class="site-nav__toggle"
       type="button"
@@ -13,7 +15,9 @@
     <ul class="site-nav__links" [class.is-open]="isMobileMenuOpen()">
       @for (link of navLinks; track link.id) {
         <li>
-          <a [href]="'#' + link.id" (click)="closeMobileMenu()">{{ link.label }}</a>
+          <a [href]="'#' + link.id" (click)="navigateToSection($event, link.id)">{{
+            link.label
+          }}</a>
         </li>
       }
     </ul>

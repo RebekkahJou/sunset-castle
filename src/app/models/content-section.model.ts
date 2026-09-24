@@ -3,10 +3,6 @@ import { CollagePhoto } from './collage-photo.model';
 /** Named background palette used to alternate section colors down the page. */
 export type SectionBackground = 'cream' | 'blush' | 'mint' | 'butter' | 'lavender';
 
-/**
- * One photo-collage section of the page (e.g. "Parks & Nature").
- * Rendered by the reusable `PhotoCollageSectionComponent`.
- */
 export interface ContentSection {
   /** Used as the section's DOM id and the nav link's URL fragment. */
   readonly id: string;

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, signal } from '@angular/core';
 import { navLinks } from '../../data/site-content.data';
 
 @Component({
@@ -12,11 +12,16 @@ export class SiteNavComponent {
   protected readonly navLinks = navLinks;
   protected readonly isMobileMenuOpen = signal(false);
 
+  constructor(private readonly changeDetectorRef: ChangeDetectorRef) {}
+
   toggleMobileMenu(): void {
     this.isMobileMenuOpen.update((isOpen) => !isOpen);
   }
 
-  closeMobileMenu(): void {
+  navigateToSection(event: MouseEvent, sectionId: string): void {
+    event.preventDefault();
     this.isMobileMenuOpen.set(false);
+    this.changeDetectorRef.detectChanges();
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }

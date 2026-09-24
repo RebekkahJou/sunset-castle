@@ -63,9 +63,13 @@ h3 {
 }
 
 /* ---------- Shared section theming ---------- */
-/* Global (not component-scoped) because every page section reuses these classes. */
 .section {
   position: relative;
+  scroll-margin-top: 80px;
+}
+
+#top {
+  scroll-margin-top: 0;
 }
 
 .section--dotted::before {

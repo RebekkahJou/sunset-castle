@@ -116,9 +116,6 @@
 }
 
 .collage__caption {
-  /* width:0 + min-width:100% keeps this caption from letting its own unwrapped
-     text width stretch the fit-content .collage__item wider than the photo
-     above it — the caption is forced to wrap to the photo's resolved width. */
   display: block;
   width: 0;
   min-width: 100%;

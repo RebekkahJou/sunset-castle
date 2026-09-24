@@ -4,17 +4,6 @@ import { ContentSection } from '../../models/content-section.model';
 import { LightboxService } from '../../services/lightbox.service';
 import { ModalService } from '../../services/modal.service';
 
-/**
- * Renders one full-width page section: a heading, an optional intro paragraph,
- * and a tilted photo-collage grid. Reused for every collage section on the page
- * (Parks & Nature, Food & Local Spots, Seasons & Local Events, etc.) so that
- * section content lives entirely in `site-content.data.ts` rather than markup.
- *
- * Clicking a photo does one of three things, in priority order:
- * 1. `externalLink` set — opens the URL in a new tab.
- * 2. `modalContent` set — opens the shared modal (a recipe or marquee).
- * 3. Neither — opens the photo full-screen in the lightbox (the default).
- */
 @Component({
   selector: 'app-photo-collage-section',
   standalone: true,
@@ -34,7 +23,7 @@ export class PhotoCollageSectionComponent {
     return `photos/${fileName}`;
   }
 
-  /** True for photos that navigate away or open the modal — styled like a link. Plain lightbox zoom doesn't count. */
+  /** True for photos that navigate away or open the modal — styled like a link. */
   isLinkStyled(photo: CollagePhoto): boolean {
     return Boolean(photo.externalLink || photo.modalContent);
   }
