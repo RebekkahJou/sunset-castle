@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "format": "prettier --write \"src/**/*.{ts,html,css}\"",
-    "format:check": "prettier --check \"src/**/*.{ts,html,css}\""
+    "format:check": "prettier --check \"src/**/*.{ts,html,css}\"",
+    "optimize-photos": "node scripts/optimize-photos.mjs"
   },
   "private": true,
   "dependencies": {
@@ -39,6 +40,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "prettier": "^3.9.9",
+    "sharp": "^0.35.4",
     "typescript": "~5.7.2",
     "typescript-eslint": "8.33.1"
   }
