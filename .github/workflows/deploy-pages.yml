@@ -31,7 +31,11 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npx ng build
+        # Served at https://sunset-drive-nutley.github.io/sunset-drive/, a
+        # subpath rather than the domain root, so the base href must match
+        # the repo name or every asset and photo path will 404. Left as "/"
+        # in src/index.html for local `ng serve`, and overridden only here.
+        run: npx ng build --base-href /sunset-drive/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
