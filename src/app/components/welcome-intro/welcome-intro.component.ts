@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ImageSkeletonDirective } from '../../directives/image-skeleton.directive';
 import {
   houseAddress,
   welcomeIntroImageAltText,
@@ -9,6 +10,7 @@ import {
 @Component({
   selector: 'app-welcome-intro',
   standalone: true,
+  imports: [ImageSkeletonDirective],
   templateUrl: './welcome-intro.component.html',
   styleUrl: './welcome-intro.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

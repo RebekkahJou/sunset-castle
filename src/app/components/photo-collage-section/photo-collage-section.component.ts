@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { ImageSkeletonDirective } from '../../directives/image-skeleton.directive';
 import { CollagePhoto } from '../../models/collage-photo.model';
 import { ContentSection } from '../../models/content-section.model';
 import { LightboxService } from '../../services/lightbox.service';
@@ -7,6 +8,7 @@ import { ModalService } from '../../services/modal.service';
 @Component({
   selector: 'app-photo-collage-section',
   standalone: true,
+  imports: [ImageSkeletonDirective],
   templateUrl: './photo-collage-section.component.html',
   styleUrl: './photo-collage-section.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

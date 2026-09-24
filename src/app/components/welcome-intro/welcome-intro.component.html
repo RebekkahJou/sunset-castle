@@ -6,7 +6,11 @@
       <p class="intro__address">{{ houseAddress }}</p>
     </div>
     <div class="intro__photo">
-      <img [src]="'photos/' + welcomeIntroImageFileName" [alt]="welcomeIntroImageAltText" />
+      <img
+        appImageSkeleton
+        [src]="'photos/' + welcomeIntroImageFileName"
+        [alt]="welcomeIntroImageAltText"
+      />
     </div>
   </div>
 </section>

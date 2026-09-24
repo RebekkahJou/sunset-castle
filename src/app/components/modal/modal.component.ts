@@ -1,5 +1,6 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { ChangeDetectionStrategy, Component, HostListener, signal } from '@angular/core';
+import { ImageSkeletonDirective } from '../../directives/image-skeleton.directive';
 import { MarqueeItem } from '../../models/modal-content.model';
 import { ModalService } from '../../services/modal.service';
 import { RecipeCardComponent } from '../recipe-card/recipe-card.component';
@@ -7,7 +8,7 @@ import { RecipeCardComponent } from '../recipe-card/recipe-card.component';
 @Component({
   selector: 'app-modal',
   standalone: true,
-  imports: [RecipeCardComponent],
+  imports: [RecipeCardComponent, ImageSkeletonDirective],
   templateUrl: './modal.component.html',
   styleUrl: './modal.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

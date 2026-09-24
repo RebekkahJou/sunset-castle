@@ -20,6 +20,7 @@
           (click)="onPhotoActivated($event, focalPhoto)"
         >
           <img
+            appImageSkeleton
             [src]="photoPath(focalPhoto.fileName)"
             [alt]="focalPhoto.altText"
             loading="lazy"
@@ -45,6 +46,7 @@
             (click)="onPhotoActivated($event, photo)"
           >
             <img
+              appImageSkeleton
               [src]="photoPath(photo.fileName)"
               [alt]="photo.altText"
               loading="lazy"

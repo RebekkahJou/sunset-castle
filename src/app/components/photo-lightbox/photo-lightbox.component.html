@@ -15,6 +15,12 @@
     <button class="lightbox__close" type="button" aria-label="Close photo" (click)="close()">
       &times;
     </button>
-    <img class="lightbox__image" [src]="photo.imageSource" [alt]="photo.altText" @scaleIn />
+    <img
+      appImageSkeleton
+      class="lightbox__image"
+      [src]="photo.imageSource"
+      [alt]="photo.altText"
+      @scaleIn
+    />
   </div>
 }

@@ -1,10 +1,12 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { ChangeDetectionStrategy, Component, HostListener } from '@angular/core';
+import { ImageSkeletonDirective } from '../../directives/image-skeleton.directive';
 import { LightboxService } from '../../services/lightbox.service';
 
 @Component({
   selector: 'app-photo-lightbox',
   standalone: true,
+  imports: [ImageSkeletonDirective],
   templateUrl: './photo-lightbox.component.html',
   styleUrl: './photo-lightbox.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

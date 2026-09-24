@@ -29,7 +29,7 @@
             @for (item of loopedMarqueeItems(modalContent.items); track $index) {
               <div class="marquee__item">
                 @if (item.kind === 'photo') {
-                  <img [src]="photoPath(item.fileName)" [alt]="item.altText" />
+                  <img appImageSkeleton [src]="photoPath(item.fileName)" [alt]="item.altText" />
                   @if (item.caption) {
                     <p class="marquee__caption">{{ item.caption }}</p>
                   }

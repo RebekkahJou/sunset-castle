@@ -1,5 +1,10 @@
 <header id="top" class="hero">
-  <img class="hero__image" [src]="'photos/' + heroImageFileName" [alt]="heroImageAltText" />
+  <img
+    appImageSkeleton
+    class="hero__image"
+    [src]="'photos/' + heroImageFileName"
+    [alt]="heroImageAltText"
+  />
   <div class="hero__content">
     <h1>Welcome Home</h1>
     <p>Welcome to your Sunset Castle</p>

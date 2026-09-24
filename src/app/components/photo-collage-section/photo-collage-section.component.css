@@ -1,6 +1,7 @@
 .collage__focal {
   display: block;
   width: fit-content;
+  min-width: 320px;
   max-width: 100%;
   margin: 0 auto 2.5rem;
   background: #fff;
@@ -13,6 +14,7 @@
   display: block;
   height: 420px;
   width: auto;
+  min-width: 320px;
   max-width: 100%;
   object-fit: contain;
   border-radius: 2px;
@@ -25,8 +27,13 @@
 }
 
 @media (max-width: 640px) {
+  .collage__focal {
+    min-width: 220px;
+  }
+
   .collage__focal img {
     height: 280px;
+    min-width: 220px;
   }
 }
 
@@ -46,6 +53,7 @@
   box-shadow: 0 14px 30px var(--color-card-shadow);
   transition: transform 0.25s ease;
   flex: 0 1 auto;
+  min-width: 120px;
   max-width: 100%;
 }
 
@@ -89,6 +97,7 @@
   display: block;
   height: 240px;
   width: auto;
+  min-width: 120px;
   max-width: 100%;
   object-fit: contain;
   border-radius: 2px;
@@ -135,7 +144,12 @@
 }
 
 @media (max-width: 480px) {
+  .collage__item {
+    min-width: 120px;
+  }
+
   .collage__item img {
     height: 200px;
+    min-width: 120px;
   }
 }
