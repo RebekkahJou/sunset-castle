@@ -41,8 +41,9 @@ export class PhotoCollageSectionComponent {
   }
 
   onPhotoActivated(event: MouseEvent, photo: CollagePhoto): void {
-    const clickedImage = event.target as HTMLImageElement;
-    if (clickedImage.classList.contains('is-missing')) {
+    const activatedButton = event.currentTarget as HTMLElement;
+    const image = activatedButton.querySelector('img');
+    if (image?.classList.contains('is-missing')) {
       return;
     }
 

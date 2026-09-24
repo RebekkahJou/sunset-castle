@@ -29,13 +29,10 @@
             decoding="async"
             (error)="onImageLoadError($event, focalPhoto.fallbackLabel)"
           />
+          <span class="collage__caption" [class.collage__caption--link]="isLinkStyled(focalPhoto)">
+            {{ focalPhoto.caption }}
+          </span>
         </button>
-        <figcaption
-          class="collage__caption"
-          [class.collage__caption--link]="isLinkStyled(focalPhoto)"
-        >
-          {{ focalPhoto.caption }}
-        </figcaption>
       </figure>
     }
     <div class="collage">
@@ -57,10 +54,10 @@
               decoding="async"
               (error)="onImageLoadError($event, photo.fallbackLabel)"
             />
+            <span class="collage__caption" [class.collage__caption--link]="isLinkStyled(photo)">
+              {{ photo.caption }}
+            </span>
           </button>
-          <figcaption class="collage__caption" [class.collage__caption--link]="isLinkStyled(photo)">
-            {{ photo.caption }}
-          </figcaption>
         </figure>
       }
     </div>
