@@ -19,6 +19,8 @@ export interface ContentSection {
   readonly background: SectionBackground;
   /** Whether to overlay the dotted confetti texture on this section. */
   readonly dotted?: boolean;
+  /** Optional featured photo shown larger, above the regular grid. */
+  readonly focalPhoto?: CollagePhoto;
   readonly photos: readonly CollagePhoto[];
 }
 

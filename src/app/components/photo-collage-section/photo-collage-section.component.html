@@ -11,6 +11,23 @@
         <p>{{ section().intro }}</p>
       }
     </div>
+    @if (section().focalPhoto; as focalPhoto) {
+      <figure class="collage__focal">
+        <button
+          type="button"
+          class="collage__photo-button"
+          [attr.aria-label]="'Enlarge photo: ' + focalPhoto.caption"
+          (click)="openLightbox($event, photoPath(focalPhoto.fileName), focalPhoto.altText)"
+        >
+          <img
+            [src]="photoPath(focalPhoto.fileName)"
+            [alt]="focalPhoto.altText"
+            (error)="onImageLoadError($event, focalPhoto.fallbackLabel)"
+          />
+        </button>
+        <figcaption class="collage__caption">{{ focalPhoto.caption }}</figcaption>
+      </figure>
+    }
     <div class="collage">
       @for (photo of section().photos; track photo.fileName) {
         <figure class="collage__item">

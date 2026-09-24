@@ -5,10 +5,7 @@ export const heroImageFileName = 'house-front-tulips-spring.jpg';
 export const heroImageAltText = 'Front of the house surrounded by purple and white tulips';
 
 export const welcomeIntroText =
-  `In the golden light of a setting sun sits a home we affectionately call our ` +
-  `"Sunset Castle." On a hill in the quiet town of Nutley, with its jewel-like ` +
-  `parks and great schools, it's a slice of happiness-—a halcyon haven of cherry ` +
-  `blossom springs, lavender-scented summers, red maple autumns, and hot chocolate winters.`;
+  "In the golden light of a setting sun sits a home we affectionately call our 'Sunset Castle.' On a hill in the quiet town of Nutley, with its jewel-like parks and great schools, it's a slice of happiness, a halcyon haven of cherry blossom springs, lavender-scented summers, red maple autumns, and hot chocolate winters.";
 
 export const houseAddress = '16 Sunset Drive, Nutley, NJ';
 
@@ -16,35 +13,74 @@ export const welcomeIntroImageFileName = 'house-front-golden-hour.jpg';
 export const welcomeIntroImageAltText = 'The house entrance lit by golden evening light';
 
 export const listingDetails: ListingDetails = {
-  price: 'TBD',
-  bedroomCount: 'TBD',
-  bathroomCount: 'TBD',
-  squareFootage: 'TBD',
-  listingUrl: '#',
+  listingUrl: 'https://listings.vbiphotography.com/16-Sunset-Dr-E-Nutley-NJ-07110-USA?lang=en',
+  agentName: 'Roger Nubel',
+  agentBrokerage: 'eXp Realty',
+  agentPhone: '(201) 527-8997',
 };
 
 export const contentSections: readonly ContentSection[] = [
   {
-    id: 'relaxing-at-home',
-    navLabel: 'At Home',
-    heading: 'Relaxing at Home',
+    id: 'nj-flowers',
+    navLabel: 'Flowers abound',
+    heading: 'Flowers Abound',
     intro:
-      'Afternoons change to sipping cool lavender tea on the patio and watching the butterflies ' +
-      'dance across the yard.',
-    background: 'blush',
-    dotted: true,
+      'As the winter fades, crocuses peek forth, purple and white, across the garden. Days turn into weeks and then sweet hyacinths perfume the air; then tulips join the symphony. With the tulips come the golden forsythia, siberial quill, and vibrant sage, bursting into spring color. Luscious lavender and stunning baptisia follow, and with them the chive flowers as delicious as they are beautiful. Summer flowers like roses and liatris and lilies are not far behind, and then late summer begonias and zinnias and black-eyed susans take over, the garden season bright from start finish.',
+    background: 'lavender',
     photos: [
       {
-        fileName: 'backyard-panorama-play-tent.jpg',
-        altText: 'Wide view of the backyard with play tents and lawn space',
-        caption: 'Room to relax and play',
-        fallbackLabel: 'Backyard panorama',
+        fileName: 'crocuses-purple-white.jpg',
+        altText: 'Purple and white crocuses and tulips in front of the house',
+        caption: 'Crocuses at home',
+        fallbackLabel: 'Crocuses by the house',
       },
       {
-        fileName: 'basement-finished-room.jpg',
-        altText: 'Finished basement room with wood-look flooring, ready for furnishing',
-        caption: 'A finished basement, ready for your vision',
-        fallbackLabel: 'Finished basement / bonus room',
+        fileName: 'liatris-blazing-star-field.jpg',
+        altText: 'Tall purple liatris flowers blooming in front of the house',
+        caption: 'Summer-blooming blazing star liatris in the front yard',
+        fallbackLabel: 'Summer liatris blooms',
+      },
+      {
+        fileName: 'garden-bearded-iris.jpg',
+        altText: 'A bearded iris in bloom in the garden',
+        caption: 'Iris in bloom',
+        fallbackLabel: 'Bearded iris',
+      },
+      // {
+      //   fileName: 'forsythia-yellow-flowers.jpg',
+      //   altText: 'Bright yellow forsythia blooms',
+      //   caption: 'Golden forsythia announces spring',
+      //   fallbackLabel: 'Forsythia in bloom',
+      // },
+      {
+        fileName: 'garden-purple-sage-flowers-1.jpg',
+        altText: 'Bright purple sage flowers in the herb garden',
+        caption: 'Sage flowers in the herb garden',
+        fallbackLabel: 'Sage flowers in bloom',
+      },
+      {
+        fileName: 'garden-squill-flowers-macro.jpg',
+        altText: 'Blue violet Siberian squill',
+        caption: 'Siberian squill in the front yard',
+        fallbackLabel: 'Siberian squill in spring',
+      },
+      {
+        fileName: 'garden-baptisia-blue-indigo.jpg',
+        altText: 'Wild indigo flowers in bloom',
+        caption: 'Wild indigo stuns with its vibrant colors',
+        fallbackLabel: 'Wild indigo in May',
+      },
+      {
+        fileName: 'garden-house-sunflowers.jpg',
+        altText: 'Sunflowers blooming in the front of the house',
+        caption: "Sunflowers both brighten the day and enrich the soil for next year's blooms",
+        fallbackLabel: 'Sunflowers in the front garden',
+      },
+      {
+        fileName: 'garden-flower-bouquet.jpg',
+        altText: 'Vase with homegrown flowers',
+        caption: 'Make your own garden bouquets',
+        fallbackLabel: 'Pretty vase with flowers',
       },
     ],
   },
@@ -52,10 +88,7 @@ export const contentSections: readonly ContentSection[] = [
     id: 'garden',
     navLabel: 'Garden',
     heading: 'The Garden',
-    intro:
-      "There's no cooking like meals made with herbs and vegetables grown in the back garden — " +
-      'oregano and thyme and sage, sugar snap peas and cherry tomatoes, or whatever else the ' +
-      'gardener decides to plant.',
+    intro: `As the winter fades, crocuses peek forth, purple and white, across the garden. Days turn into weeks and then sweet hyacinths perfume the air; then tulips join the symphony. With the tulips come the cherry blossoms, and out comes the golden forsythia, accompanied by a serenade of pinks and whites making paradise of the towns and parks. \n \n There's no cooking like meals made with herbs and vegetables grown in the back garden--oregano and thyme and sage, sugar snap peas and cherry tomatoes, or whatever else the gardener decides to plant.`,
     background: 'mint',
     photos: [
       {
@@ -71,10 +104,22 @@ export const contentSections: readonly ContentSection[] = [
         fallbackLabel: 'Sunflowers and lavender',
       },
       {
+        fileName: 'lavender-bee.jpg',
+        altText: 'Bee napping on lavender flower',
+        caption: 'Friendly pollinators drawn by lavender yield a large tomato harvest',
+        fallbackLabel: 'Bee napping on lavender flower',
+      },
+      {
         fileName: 'house-chive-blossoms.jpg',
         altText: 'Flowering chives in front of the house',
         caption: 'Herbs all growing season',
         fallbackLabel: 'Flowering chives',
+      },
+      {
+        fileName: 'garden-snap-peas.jpg',
+        altText: 'Fresh snap peas held in a hand',
+        caption: 'The sweetest snap peas grow at home',
+        fallbackLabel: 'Sugar snap peas',
       },
       {
         fileName: 'garden-cherry-tomatoes-bowl.jpg',
@@ -83,10 +128,69 @@ export const contentSections: readonly ContentSection[] = [
         fallbackLabel: 'Cherry tomato harvest',
       },
       {
-        fileName: 'garden-bearded-iris.jpg',
-        altText: 'A bearded iris in bloom in the garden',
-        caption: 'Iris in bloom',
-        fallbackLabel: 'Bearded iris',
+        fileName: 'garden-spicy-peppers.jpg',
+        altText: 'Spicy peppers picked in a bowl with green peppers in the background',
+        caption: 'Harvest your own heat with homegrown spicy peppers',
+        fallbackLabel: 'A bowl with freshy harvested spicy peppers in the garden',
+      },
+      {
+        fileName: 'harvested-peppers.jpg',
+        altText: 'Three freezer bags full of spicy peppers',
+        caption: 'Grow and harvest in spring and summer, freeze to enjoy all year',
+        fallbackLabel: 'Freeze herbs and vegetables to enjoy all year',
+      },
+    ],
+  },
+  {
+    id: 'cherry-blossoms',
+    navLabel: 'Cherry Blossoms',
+    heading: 'The Cherry Blossoms of Essex County',
+    intro:
+      'In spring, a serenade of pinks and whites make paradise of the towns and parks of Essex county. When the first white and light pink petals start to accumulate in frothy drifts of flower, the weeping cherries of a deeper graceful pink begin to sway a romantic melody. As those notes fade, the bright bold Kwanzan cherries sing the finale of the month of blossom. And when they, too, let flutter down their petals, it is just time for lavender planting, for the cherry laurels to make honey-scented blooms, and for dogwood trees to make their showcase.',
+    background: 'butter',
+    focalPhoto: {
+      fileName: 'cherry-blossoms-nichols.jpg',
+      altText:
+        'A Kwanzan cherry tree in deep pink bloom arching over the stone-lined creek in Nichols Park',
+      caption: 'Cherry blossoms over the creek, Nichols Park',
+      fallbackLabel: 'Cherry blossoms at Nichols Park',
+    },
+    photos: [
+      {
+        fileName: 'branch-brook-park-cherry-blossom-row.jpg',
+        altText: 'Thousands of cherry blossom trees in bloom at Branch Brook Park',
+        caption: 'Branch Brook Park, Newark',
+        fallbackLabel: 'Branch Brook Park cherry blossoms',
+      },
+      {
+        fileName: 'nichols-park-creek-cherry-blossoms.jpg',
+        altText: 'A stone-lined creek running through Nichols Park under blooming cherry trees',
+        caption: 'Nichols Park, spring',
+        fallbackLabel: 'Nichols Park creek',
+      },
+      {
+        fileName: 'cherry-blossoms-closeup-1.jpg',
+        altText: 'Close-up of pale pink cherry blossoms',
+        caption: 'Blossoms up close',
+        fallbackLabel: 'Cherry blossom close-up',
+      },
+      {
+        fileName: 'playground-sunset-cherry-blossoms.jpg',
+        altText: 'Playground lit by sunset, framed by cherry blossoms',
+        caption: 'Eleanor Guarino Playground, Belleville',
+        fallbackLabel: 'Eleanor Guarino Playground',
+      },
+      {
+        fileName: 'park-tea-tray.jpg',
+        altText: 'A picnic set up under cherry blossom trees in the park',
+        caption: 'A picnic under the blossoms',
+        fallbackLabel: 'Picnic under the blossoms',
+      },
+      {
+        fileName: 'park-picnic-castle-table-sunflower-game.jpg',
+        altText: 'A board game set up in the park',
+        caption: 'Board games and blossoms',
+        fallbackLabel: 'Board games under cherry blossoms',
       },
     ],
   },
@@ -99,6 +203,12 @@ export const contentSections: readonly ContentSection[] = [
     background: 'lavender',
     dotted: true,
     photos: [
+      {
+        fileName: 'backyard-panorama-play-tent.jpg',
+        altText: 'Wide view of the backyard with play tents and lawn space',
+        caption: 'Room to relax and play',
+        fallbackLabel: 'Backyard panorama',
+      },
       {
         fileName: 'backyard-slide-camping-tent.jpg',
         altText: "A tent set up in the backyard next to a kids' slide",
@@ -126,13 +236,13 @@ export const contentSections: readonly ContentSection[] = [
       {
         fileName: 'pumpkin-carving-jack-o-lantern.jpg',
         altText: "A carved jack-o'-lantern",
-        caption: 'Pumpkin carving on Prospect Avenue',
+        caption: 'Pumpkin carving on the patio',
         fallbackLabel: 'Pumpkin carving',
       },
       {
         fileName: 'halloween-minion-display-house-1.jpg',
         altText: 'A house decorated with a Halloween Minion display',
-        caption: 'Halloween down the block',
+        caption: 'Town-wide Halloween party on Prospect Avenue',
         fallbackLabel: 'Halloween decorations',
       },
       {
@@ -150,66 +260,6 @@ export const contentSections: readonly ContentSection[] = [
     ],
   },
   {
-    id: 'parks-and-nature',
-    navLabel: 'Parks & Nature',
-    heading: 'Parks & Nature',
-    intro:
-      'As the winter fades, crocuses peek forth, purple and white, across the garden. ' +
-      'Days turn into weeks and the tulips join the symphony, with cherry blossoms close behind.',
-    background: 'blush',
-    dotted: true,
-    photos: [
-      {
-        fileName: 'branch-brook-park-cherry-blossom-row.jpg',
-        altText: 'Rows of cherry blossom trees in bloom at Branch Brook Park',
-        caption: 'Branch Brook Park, Newark',
-        fallbackLabel: 'Branch Brook Park cherry blossoms',
-      },
-      {
-        fileName: 'nichols-park-creek-cherry-blossoms.jpg',
-        altText: 'A stone-lined creek running through Nichols Park under blooming cherry trees',
-        caption: 'Nichols Park, spring',
-        fallbackLabel: 'Nichols Park creek',
-      },
-      {
-        fileName: 'cherry-blossoms-closeup-1.jpg',
-        altText: 'Close-up of pale pink cherry blossoms',
-        caption: 'Blossoms up close',
-        fallbackLabel: 'Cherry blossom close-up',
-      },
-      {
-        fileName: 'playground-sunset-cherry-blossoms.jpg',
-        altText: 'Playground lit by sunset, framed by cherry blossoms',
-        caption: 'Eleanor Guarino Playground, Belleville',
-        fallbackLabel: 'Eleanor Guarino Playground',
-      },
-      {
-        fileName: 'house-front-crocuses-tulips.jpg',
-        altText: 'Purple and white crocuses and tulips in front of the house',
-        caption: 'Crocuses at home',
-        fallbackLabel: 'Crocuses by the house',
-      },
-      {
-        fileName: 'house-front-liatris-blooms.jpg',
-        altText: 'Tall purple liatris flowers blooming in front of the house',
-        caption: 'Summer-blooming blazing star liatris',
-        fallbackLabel: 'Summer liatris blooms',
-      },
-      {
-        fileName: 'forsythia-yellow-flowers.jpg',
-        altText: 'Bright yellow forsythia blooms',
-        caption: 'Golden forsythia announces spring',
-        fallbackLabel: 'Forsythia in bloom',
-      },
-      {
-        fileName: 'park-picnic-cherry-blossom-castle-table.jpg',
-        altText: 'A picnic set up under cherry blossom trees in the park',
-        caption: 'A picnic under the blossoms',
-        fallbackLabel: 'Picnic under the blossoms',
-      },
-    ],
-  },
-  {
     id: 'food-and-local-spots',
     navLabel: 'Food & Spots',
     heading: 'Food & Local Spots',
@@ -218,12 +268,12 @@ export const contentSections: readonly ContentSection[] = [
       'and families sipping tea and bubble tea from one of the many awesome spots in town.',
     background: 'butter',
     photos: [
-      {
-        fileName: 'park-tea-tray.jpg',
-        altText: 'Tea cups and a thermos on a wooden tray in the park, cherry blossoms behind',
-        caption: 'Tea shops nearby in Montclair',
-        fallbackLabel: 'Tea in the park',
-      },
+      // {
+      //   fileName: '',
+      //   altText: '',
+      //   caption: '',
+      //   fallbackLabel: '',
+      // },
       {
         fileName: 'tea-shop-fireplace.jpg',
         altText: 'A cozy local tea shop interior with a fireplace',
@@ -239,7 +289,7 @@ export const contentSections: readonly ContentSection[] = [
       {
         fileName: 'sushi-hand-rolls.jpg',
         altText: 'A plate of sushi hand rolls',
-        caption: 'Sushi night, close to home',
+        caption: 'Sushi night at Nami Nori in Monclair',
         fallbackLabel: 'Sushi nearby',
       },
     ],
@@ -249,9 +299,21 @@ export const contentSections: readonly ContentSection[] = [
     navLabel: 'Things To Do',
     heading: 'Things To Do',
     intro:
-      "Adventure is calling-—from the zoo to the shore, there's always somewhere nearby to explore.",
+      "By midsummer the warm oranges and golds of sunflowers and black-eyed susans brighten the fields. Nearby are plenty of options for fun, from the Metlife Stadium for concerts and sporting events to the American Dream Mall with escape rooms, indoor theme parks, and even indoor skiing. An hour's drive brings the freshest apples and strawberries into the kitchen. Adventure is calling-—from the zoo to the shore, there's always somewhere nearby to explore.",
     background: 'mint',
     photos: [
+      {
+        fileName: 'sesame-street-big-bird-meetgreet.jpg',
+        altText: 'A family meet-and-greet with Big Bird',
+        caption: 'A day at Sesame Place in the American Dream Mall',
+        fallbackLabel: 'Sesame Place day trip',
+      },
+      {
+        fileName: 'sea-life-aquarium-statue-of-liberty.jpg',
+        altText: 'A Statue of Liberty display inside the SEA LIFE aquarium at American Dream',
+        caption: 'SEA LIFE at American Dream',
+        fallbackLabel: 'SEA LIFE at American Dream',
+      },
       {
         fileName: 'zoo-cheetah.jpg',
         altText: 'A cheetah resting at Turtle Back Zoo',
@@ -259,16 +321,16 @@ export const contentSections: readonly ContentSection[] = [
         fallbackLabel: 'Turtle Back Zoo cheetah',
       },
       {
-        fileName: 'zoo-lion-1.jpg',
-        altText: 'A lion walking at Turtle Back Zoo',
-        caption: 'South Mountain Recreation Complex',
-        fallbackLabel: 'Turtle Back Zoo lion',
+        fileName: 'fairy-garden-tree-stump.jpg',
+        altText: 'A fairy house at the Fairy Trail near South Mountain Reservation',
+        caption: 'Hike along the Fairy Trail near South Mountain Reservation',
+        fallbackLabel: 'A fairy house',
       },
       {
-        fileName: 'butterfly-house-exhibit.jpg',
-        altText: 'Butterflies inside a butterfly house exhibit',
-        caption: 'The butterfly house',
-        fallbackLabel: 'Butterfly house',
+        fileName: 'liberty-science-center-trains.jpg',
+        altText: 'A model train exhibit at Liberty Science Center',
+        caption: 'Liberty Science Center trains exhibit',
+        fallbackLabel: 'Liberty Science Center',
       },
       {
         fileName: 'kips-castle-facade.jpg',
@@ -277,52 +339,40 @@ export const contentSections: readonly ContentSection[] = [
         fallbackLabel: "Kip's Castle",
       },
       {
+        fileName: 'legoland-ny-statue-of-liberty.jpg',
+        altText: 'A Statue of Liberty display at Legoland NY',
+        caption: 'Legoland only an hour away',
+        fallbackLabel: 'Statue of Liberty made of Legos',
+      },
+      {
         fileName: 'beach-sunrise-pier.jpg',
         altText: 'Sunrise over the ocean seen from a pier',
         caption: 'A short drive to the shore',
         fallbackLabel: 'Beach day trip',
       },
-    ],
-  },
-  {
-    id: 'day-trips',
-    navLabel: 'Day Trips',
-    heading: 'Day Trips',
-    intro:
-      'By midsummer the warm oranges and golds of sunflowers and black-eyed susans brighten ' +
-      "the fields. An hour's drive finds perfect pie-fruit and brings the freshest apples into the kitchen.",
-    background: 'lavender',
-    dotted: true,
-    photos: [
       {
         fileName: 'orchard-apple-on-tree-1.jpg',
         altText: 'Apples ripening on a tree at a local orchard',
-        caption: 'Apple picking, an hour away',
+        caption: 'Apple picking, an hour away at Maskers Orchard, Alstede Farm, and Ort Farm',
         fallbackLabel: 'Apple picking',
+      },
+      {
+        fileName: 'strawberries.jpg',
+        altText: 'Crates full of freshly picked strawberries',
+        caption: 'Strawberry picking at Hillsview Farmstand',
+        fallbackLabel: 'Strawberry picking',
+      },
+      {
+        fileName: 'bronx-zoo.jpg',
+        altText: 'A colorful hornbill perched on a branch in a lush aviary exhibit',
+        caption: 'A day trip to the Bronx Zoo',
+        fallbackLabel: 'Bronx Zoo',
       },
       {
         fileName: 'sunflower-field-wide-view.jpg',
         altText: 'A wide field of blooming sunflowers',
-        caption: 'Sunflower fields in full bloom',
+        caption: 'Instagram-worthy sunflower fields at Ort and Alstede Farms',
         fallbackLabel: 'Sunflower fields',
-      },
-      {
-        fileName: 'sunflower-field-girl.jpg',
-        altText: 'A child posing in a sunflower field',
-        caption: 'Instagram-worthy sunflower fields',
-        fallbackLabel: 'Sunflower field visit',
-      },
-      {
-        fileName: 'park-picnic-castle-table-sunflower-game.jpg',
-        altText: 'A picnic with a board game set up in the park',
-        caption: 'A picnic day out',
-        fallbackLabel: 'Picnic day out',
-      },
-      {
-        fileName: 'sesame-street-big-bird-meetgreet.jpg',
-        altText: 'A family meet-and-greet with Big Bird',
-        caption: 'A day at Sesame Place',
-        fallbackLabel: 'Sesame Place day trip',
       },
     ],
   },
@@ -349,40 +399,35 @@ export const contentSections: readonly ContentSection[] = [
         fallbackLabel: 'NYC skyline',
       },
       {
+        fileName: 'summit-vanderbilt-mirror-room-1.jpg',
+        altText: 'Mirror ball room at Summit One Vanderbuilt',
+        caption:
+          'Silver balloons make an otherworldly adventure with a skyline view at Summit One Vanderbilt',
+        fallbackLabel: 'Mirror ball room at Summit One Vanderbilt',
+      },
+      {
         fileName: 'moma-dali-persistence-of-memory.jpg',
         altText: 'A surrealist painting on display at the MoMA',
-        caption: 'Otherworldly art at the MoMA',
+        caption: 'Explore art at the MoMA',
         fallbackLabel: 'MoMA',
       },
       {
         fileName: 'color-factory-nyc-wall.jpg',
         altText: 'A brightly colored wall installation at the Color Factory',
-        caption: 'The Color Factory',
+        caption: 'Create brilliant photos and memories at the Color Factory',
         fallbackLabel: 'Color Factory',
       },
       {
         fileName: 'sloomoo-institute-slime-cups.jpg',
         altText: 'Cups of colorful slime at the SlooMoo Institute',
-        caption: 'SlooMoo Institute',
+        caption: 'Make your own fun at SlooMoo Institute: a museum of slime',
         fallbackLabel: 'SlooMoo Institute',
       },
       {
         fileName: 'museum-of-ice-cream-cup.jpg',
         altText: 'A cup of ice cream at the Museum of Ice Cream',
-        caption: 'Museum of Ice Cream',
+        caption: 'Enjoy endless ice cream and smorgasboard of photo ops at the Museum of Ice Cream',
         fallbackLabel: 'Museum of Ice Cream',
-      },
-      {
-        fileName: 'sea-life-aquarium-statue-of-liberty.jpg',
-        altText: 'A Statue of Liberty display inside the SEA LIFE aquarium at American Dream',
-        caption: 'SEA LIFE at American Dream',
-        fallbackLabel: 'SEA LIFE at American Dream',
-      },
-      {
-        fileName: 'liberty-science-center-trains.jpg',
-        altText: 'A model train exhibit at Liberty Science Center',
-        caption: 'Liberty Science Center',
-        fallbackLabel: 'Liberty Science Center',
       },
     ],
   },
@@ -398,6 +443,24 @@ export const contentSections: readonly ContentSection[] = [
         altText: 'The Golden Gate Bridge in San Francisco',
         caption: 'San Francisco, USA',
         fallbackLabel: 'San Francisco',
+      },
+      {
+        fileName: 'big-ben.jpg',
+        altText: 'Big Ben and the Houses of Parliament in London',
+        caption: 'London, England',
+        fallbackLabel: 'Big Ben',
+      },
+      {
+        fileName: 'monte-do-castro-vigo-spain.jpg',
+        altText: 'A stone watchtower overlooking the bay from Monte do Castro',
+        caption: 'Vigo, Spain',
+        fallbackLabel: 'Monte do Castro, Vigo',
+      },
+      {
+        fileName: 'disneyworld.jpg',
+        altText: 'Fireworks over Cinderella Castle at Walt Disney World',
+        caption: 'Walt Disney World, Florida',
+        fallbackLabel: 'Disney World fireworks',
       },
       {
         fileName: 'taipei-101-dusk.jpg',

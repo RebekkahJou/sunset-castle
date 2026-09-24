@@ -1,6 +1,40 @@
+.collage__focal {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 2.5rem;
+  background: #fff;
+  padding: 0.75rem 0.75rem 1.25rem;
+  border-radius: 4px;
+  box-shadow: 0 20px 48px var(--color-card-shadow);
+}
+
+.collage__focal img {
+  display: block;
+  height: 420px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+.collage__focal .collage__caption {
+  font-size: 1.1rem;
+  margin-top: 0.85rem;
+}
+
+@media (max-width: 640px) {
+  .collage__focal img {
+    height: 280px;
+  }
+}
+
 .collage {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
   gap: 1.75rem;
 }
 
@@ -11,6 +45,8 @@
   border-radius: 4px;
   box-shadow: 0 14px 30px var(--color-card-shadow);
   transition: transform 0.25s ease;
+  flex: 0 1 auto;
+  max-width: 100%;
 }
 
 .collage__item:hover {
@@ -29,7 +65,6 @@
 
 .collage__photo-button {
   display: block;
-  width: 100%;
   margin: 0;
   padding: 0;
   border: none;
@@ -48,13 +83,17 @@
 }
 
 .collage__item img {
-  width: 100%;
+  display: block;
   height: 240px;
-  object-fit: cover;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
   border-radius: 2px;
+  margin: 0 auto;
 }
 
 .collage__item img.is-missing {
+  width: 320px;
   background: repeating-linear-gradient(
     135deg,
     rgba(184, 118, 63, 0.12),
@@ -74,10 +113,23 @@
 }
 
 .collage__caption {
+  /* width:0 + min-width:100% keeps this caption from letting its own unwrapped
+     text width stretch the fit-content .collage__item wider than the photo
+     above it — the caption is forced to wrap to the photo's resolved width. */
   display: block;
+  width: 0;
+  min-width: 100%;
+  box-sizing: border-box;
   text-align: center;
   font-style: italic;
   color: var(--color-ink-soft);
   font-size: 0.95rem;
   margin-top: 0.6rem;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 480px) {
+  .collage__item img {
+    height: 200px;
+  }
 }

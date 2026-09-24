@@ -8,19 +8,10 @@
   color: #fff;
 }
 
-.cta__details {
-  display: inline-flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1.5rem 0 2rem;
-  font-size: 1.1rem;
-}
-
-.cta__details span {
-  border: 1px dashed rgba(255, 255, 255, 0.7);
-  border-radius: 4px;
-  padding: 0.4rem 0.9rem;
+.cta p {
+  max-width: 640px;
+  margin: 1.25rem auto 2rem;
+  font-size: 1.15rem;
 }
 
 .cta__button {
