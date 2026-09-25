@@ -190,7 +190,7 @@ export const contentSections: readonly ContentSection[] = [
       {
         fileName: 'branch-brook-cherry-blossoms-4.jpg',
         altText: 'Rows of pink and white cherry blossom trees along a path at Branch Brook Park',
-        caption: 'More blossoms at Branch Brook Park',
+        caption: 'Every shade of pink and white in the blossoms at Branch Brook Park',
         fallbackLabel: 'Branch Brook Park cherry blossoms',
       },
       {
@@ -231,7 +231,7 @@ export const contentSections: readonly ContentSection[] = [
     navLabel: 'Seasons',
     heading: 'Seasons & Local Events',
     intro:
-      'Every season brings its own reason to celebrate, right in the backyard and around the neighborhood.',
+      `Every season brings its own reason to celebrate, right in the backyard and around the neighborhood. Picnics, sports, and spring holidays keep friendships warm while the temperatures slowly rise. Soon, as the long days lead to playful long afternoons, it is perfect weather for the stargazing, while magical fireflies light up the yard. Then when the grocery seasonal aisle starts to trade tiki torches and grills for backpack and shoe sales, the apple orchards grow lush with sweet fruit. With the reds and oranges migrating from branch to the ground, family and friends circle the table under the dining room chandelier and think of all there is to be grateful for. As snow begins to tumble, the family debates become on whether to go to Memorial Park by Vreeland to sled, or Third River Park behind the library. Outside stands a snowman happy snowman, hoping for a cup of that delicous hot cocoa.`,
     background: 'lavender',
     dotted: true,
     focalPhoto: {
@@ -479,7 +479,7 @@ export const contentSections: readonly ContentSection[] = [
     navLabel: 'Things To Do',
     heading: 'Things To Do',
     intro:
-      "By midsummer the warm oranges and golds of sunflowers and black-eyed susans brighten the fields. Nearby are plenty of options for fun, from the Metlife Stadium for concerts and sporting events to the American Dream Mall with escape rooms, indoor theme parks, and even indoor skiing. An hour's drive brings the freshest apples and strawberries into the kitchen. Adventure is calling-—from the zoo to the shore, there's always somewhere nearby to explore.",
+      "Adventure is calling! Nearby are plenty of options for fun, from the Metlife Stadium for concerts and sporting events to the American Dream Mall with escape rooms, indoor theme parks, and even indoor skiing. Drive out to Kip's Castle, South Mountain Reservation, or Garret Mountain Reservation for hiking. Stay a night at Legoland or venture to the Land of Make Believe or Six Flags for amusement park fun. Find the Fairy Trail in South Mountain, or wander through the lavender at Hidden Springs Lavender and Alpaca farm. From the zoo to the shore, there's always somewhere nearby to explore.",
     background: 'mint',
     photos: [
       {
@@ -567,9 +567,7 @@ export const contentSections: readonly ContentSection[] = [
     navLabel: 'Close to NYC',
     heading: 'Close to NYC',
     intro:
-      'Take the express bus into the city for a day of delight: rise above the skyline, browse ' +
-      'world-class art, or dive into color, slime, and ice cream for the culinary and creative ' +
-      'adventure of a lifetime.',
+      `Take the 192 Express into NYC for a day of delight: Rise to the top of Summit for stunning city views and otherworldly art, or browse the MoMA. See a musical on Broadway and visit Times Square. Cool off with the Museum of Ice Cream, dive into color at the Color Factory, or squish your way through the SlooMoo Institute (a museum of slime). Or just eat your way across city's amazing restaurants for the culinary adventure of a lifetime!`,
     background: 'cream',
     photos: [
       {
@@ -623,7 +621,8 @@ export const contentSections: readonly ContentSection[] = [
   {
     id: 'easy-travel',
     navLabel: 'Easy Travel',
-    heading: 'Close to three major airports and a cruise port: the world is at your fingertips',
+    heading: 'Go Anywhere and Everywhere',
+    intro: 'Close to three major airports and a cruise port: the whole world is within reach! Domestic or international, to adventure or to relax, travel is as easy as a ticket and a taxi. Where will you go?',
     background: 'blush',
     dotted: true,
     photos: [
