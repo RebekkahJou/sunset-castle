@@ -14,6 +14,8 @@ export const welcomeIntroImageAltText = 'The house entrance lit by golden evenin
 
 export const listingDetails: ListingDetails = {
   listingUrl: 'https://listings.vbiphotography.com/16-Sunset-Dr-E-Nutley-NJ-07110-USA?lang=en',
+  videoTourUrl:
+    'https://www.zillow.com/view-imx/4c467c48-3be3-4c79-938f-63da84d1e0a0?setAttribution=mls&wl=true&initialViewType=pano&utm_source=dashboard',
   agentName: 'Roger Nubel',
   agentBrokerage: 'eXp Realty',
   agentPhone: '(201) 527-8997',
@@ -230,8 +232,7 @@ export const contentSections: readonly ContentSection[] = [
     id: 'seasons-and-events',
     navLabel: 'Seasons',
     heading: 'Seasons & Local Events',
-    intro:
-      `Every season brings its own reason to celebrate, right in the backyard and around the neighborhood. Picnics, sports, and spring holidays keep friendships warm while the temperatures slowly rise. Soon, as the long days lead to playful long afternoons, it is perfect weather for the stargazing, while magical fireflies light up the yard. Then when the grocery seasonal aisle starts to trade tiki torches and grills for backpack and shoe sales, the apple orchards grow lush with sweet fruit. With the reds and oranges migrating from branch to the ground, family and friends circle the table under the dining room chandelier and think of all there is to be grateful for. As snow begins to tumble, the family debates become on whether to go to Memorial Park by Vreeland to sled, or Third River Park behind the library. Outside stands a snowman happy snowman, hoping for a cup of that delicous hot cocoa.`,
+    intro: `Every season brings its own reason to celebrate, right in the backyard and around the neighborhood. Picnics, sports, and spring holidays keep friendships warm while the temperatures slowly rise. Soon, as the long days lead to playful long afternoons, it is perfect weather for the stargazing, while magical fireflies light up the yard. Then when the grocery seasonal aisle starts to trade tiki torches and grills for backpack and shoe sales, the apple orchards grow lush with sweet fruit. With the reds and oranges migrating from branch to the ground, family and friends circle the table under the dining room chandelier and think of all there is to be grateful for. As snow begins to tumble, the family debates become on whether to go to Memorial Park by Vreeland to sled, or Third River Park behind the library. Outside stands a snowman happy snowman, hoping for a cup of that delicous hot cocoa.`,
     background: 'lavender',
     dotted: true,
     focalPhoto: {
@@ -424,18 +425,18 @@ export const contentSections: readonly ContentSection[] = [
         externalLink: 'https://teastoremontclair.com/',
       },
       {
-        fileName: 'ramen-kinya-bowl.jpg',
-        altText: 'A bowl of ramen from Kinya',
-        caption: 'Ramen at Kinya',
-        fallbackLabel: 'Ramen at Kinya',
-        externalLink: 'https://kinya.us/location/west-orange-2/',
-      },
-      {
         fileName: 'sushi-hand-rolls.jpg',
         altText: 'A plate of sushi hand rolls',
         caption: 'Sushi night at Nami Nori in Montclair',
         fallbackLabel: 'Sushi nearby',
         externalLink: 'https://www.naminori.us/montclair',
+      },
+      {
+        fileName: 'ramen-kinya-bowl.jpg',
+        altText: 'A bowl of ramen from Kinya',
+        caption: 'Ramen at Kinya',
+        fallbackLabel: 'Ramen at Kinya',
+        externalLink: 'https://kinya.us/location/west-orange-2/',
       },
       {
         fileName: 'ochado-bubble-tea-nutley.png',
@@ -566,21 +567,20 @@ export const contentSections: readonly ContentSection[] = [
     id: 'close-to-nyc',
     navLabel: 'Close to NYC',
     heading: 'Close to NYC',
-    intro:
-      `Take the 192 Express into NYC for a day of delight: Rise to the top of Summit for stunning city views and otherworldly art, or browse the MoMA. See a musical on Broadway and visit Times Square. Cool off with the Museum of Ice Cream, dive into color at the Color Factory, or squish your way through the SlooMoo Institute (a museum of slime). Or just eat your way across city's amazing restaurants for the culinary adventure of a lifetime!`,
+    intro: `Take the 192 Express into NYC for a day of delight: Rise to the top of Summit for stunning city views and otherworldly art, or browse the MoMA. See a musical on Broadway and visit Times Square. Cool off with the Museum of Ice Cream, dive into color at the Color Factory, or squish your way through the SlooMoo Institute (a museum of slime). Or just eat your way across city's amazing restaurants for the culinary adventure of a lifetime!`,
     background: 'cream',
     photos: [
-      {
-        fileName: 'statue-of-liberty-nyc.jpg',
-        altText: 'The Statue of Liberty',
-        caption: 'The Statue of Liberty',
-        fallbackLabel: 'Statue of Liberty',
-      },
       {
         fileName: 'nyc-skyline-empire-state-1.jpg',
         altText: 'The New York City skyline including the Empire State Building',
         caption: 'Skyline views from Summit One Vanderbilt',
         fallbackLabel: 'NYC skyline',
+      },
+      {
+        fileName: 'statue-of-liberty-nyc.jpg',
+        altText: 'The Statue of Liberty',
+        caption: 'The Statue of Liberty',
+        fallbackLabel: 'Statue of Liberty',
       },
       {
         fileName: 'summit-vanderbilt-mirror-room-1.jpg',
@@ -622,7 +622,8 @@ export const contentSections: readonly ContentSection[] = [
     id: 'easy-travel',
     navLabel: 'Easy Travel',
     heading: 'Go Anywhere and Everywhere',
-    intro: 'Close to three major airports and a cruise port: the whole world is within reach! Domestic or international, to adventure or to relax, travel is as easy as a ticket and a taxi. Where will you go?',
+    intro:
+      'Close to three major airports and a cruise port: the whole world is within reach! Domestic or international, to adventure or to relax, travel is as easy as a ticket and a taxi. Where will you go?',
     background: 'blush',
     dotted: true,
     photos: [

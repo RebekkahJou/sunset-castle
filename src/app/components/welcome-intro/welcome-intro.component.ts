@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ImageSkeletonDirective } from '../../directives/image-skeleton.directive';
 import {
   houseAddress,
+  listingDetails,
   welcomeIntroImageAltText,
   welcomeIntroImageFileName,
   welcomeIntroText,
@@ -19,6 +20,7 @@ import { buildPhotoSrcset, photoPath } from '../../utils/photo-srcset';
 export class WelcomeIntroComponent {
   protected readonly welcomeIntroText = welcomeIntroText;
   protected readonly houseAddress = houseAddress;
+  protected readonly listingDetails = listingDetails;
   protected readonly welcomeIntroImageAltText = welcomeIntroImageAltText;
   protected readonly welcomeIntroImageSrc = photoPath(welcomeIntroImageFileName);
   protected readonly welcomeIntroImageSrcset = buildPhotoSrcset(welcomeIntroImageFileName);
