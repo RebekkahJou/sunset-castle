@@ -82,7 +82,7 @@ export const contentSections: readonly ContentSection[] = [
     id: 'garden',
     navLabel: 'Garden',
     heading: 'The Garden',
-    intro: `As the winter fades, crocuses peek forth, purple and white, across the garden. Days turn into weeks and then sweet hyacinths perfume the air; then tulips join the symphony. With the tulips come the cherry blossoms, and out comes the golden forsythia, accompanied by a serenade of pinks and whites making paradise of the towns and parks. \n \n There's no cooking like meals made with herbs and vegetables grown in the back garden--oregano and thyme and sage, sugar snap peas and cherry tomatoes, or whatever else the gardener decides to plant.`,
+    intro: `There's nothing as delicious as meals made with herbs and vegetables grown in the back garden: oregano and thyme and sage and fennel, sugar snap peas and cherry tomatoes, and whatever else the gardener decides to plant. Will 2027 bring the sweetest cherry tomatoes ever? Crunchy cucumbers and fiery habeneros? Easy herbs, and brilliant blooms of every color?`,
     background: 'mint',
     photos: [
       {
@@ -98,12 +98,6 @@ export const contentSections: readonly ContentSection[] = [
         fallbackLabel: 'Sunflowers and lavender',
       },
       {
-        fileName: 'lavender-bee.jpg',
-        altText: 'Bee napping on lavender flower',
-        caption: 'Friendly pollinators drawn by lavender yield a large tomato harvest',
-        fallbackLabel: 'Bee napping on lavender flower',
-      },
-      {
         fileName: 'house-chive-blossoms.jpg',
         altText: 'Flowering chives in front of the house',
         caption: 'Herbs all growing season',
@@ -114,6 +108,12 @@ export const contentSections: readonly ContentSection[] = [
         altText: 'Fresh snap peas held in a hand',
         caption: 'The sweetest snap peas grow at home',
         fallbackLabel: 'Sugar snap peas',
+      },
+      {
+        fileName: 'lavender-bee.jpg',
+        altText: 'Bee napping on lavender flower',
+        caption: 'Friendly pollinators drawn by lavender yield a large tomato harvest',
+        fallbackLabel: 'Bee napping on lavender flower',
       },
       {
         fileName: 'garden-cherry-tomatoes-bowl.jpg',
@@ -182,10 +182,23 @@ export const contentSections: readonly ContentSection[] = [
         externalLink: 'https://branchbrookpark.org/index.html',
       },
       {
+        fileName: 'branch-brook-weeping-cherry.jpg',
+        altText: 'A centuries-old weeping cherry tree in full pale pink bloom at Branch Brook Park',
+        caption: 'Romantic weeping cherry tree, Branch Brook Park',
+        fallbackLabel: 'Weeping cherry tree, Branch Brook Park',
+      },
+      {
+        fileName: 'branch-brook-cherry-blossoms-4.jpg',
+        altText: 'Rows of pink and white cherry blossom trees along a path at Branch Brook Park',
+        caption: 'More blossoms at Branch Brook Park',
+        fallbackLabel: 'Branch Brook Park cherry blossoms',
+      },
+      {
         fileName: 'nichols-park-creek-cherry-blossoms.jpg',
-        altText: 'A stone-lined creek running through Nichols Park under blooming cherry trees',
-        caption: 'Nichols Park, spring',
-        fallbackLabel: 'Nichols Park creek',
+        altText:
+          "A stone-lined creek running through Nutley's Memorial Park under blooming cherry trees",
+        caption: 'Memorial Park, Nutley',
+        fallbackLabel: 'Memorial Park creek',
       },
       {
         fileName: 'cherry-blossoms-closeup-1.jpg',
@@ -221,24 +234,24 @@ export const contentSections: readonly ContentSection[] = [
       'Every season brings its own reason to celebrate, right in the backyard and around the neighborhood.',
     background: 'lavender',
     dotted: true,
+    focalPhoto: {
+      fileName: 'backyard-panorama-play-tent.jpg',
+      altText: 'Wide view of the backyard with play tents and lawn space',
+      caption: 'Room to relax and play',
+      fallbackLabel: 'Backyard panorama',
+    },
     photos: [
       {
-        fileName: 'backyard-panorama-play-tent.jpg',
-        altText: 'Wide view of the backyard with play tents and lawn space',
-        caption: 'Room to relax and play',
-        fallbackLabel: 'Backyard panorama',
+        fileName: 'summer-fireworks.jpg',
+        altText: 'Fireworks lighting up the summer night sky',
+        caption: "Nutley's Fourth of July fireworks",
+        fallbackLabel: 'Fourth of July fireworks',
       },
       {
         fileName: 'backyard-slide-camping-tent.jpg',
         altText: "A tent set up in the backyard next to a kids' slide",
         caption: 'Backyard camping under the stars',
         fallbackLabel: 'Backyard summer camping',
-      },
-      {
-        fileName: 'summer-fireworks.jpg',
-        altText: 'Fireworks lighting up the summer night sky',
-        caption: "Nutley's Fourth of July fireworks",
-        fallbackLabel: 'Fourth of July fireworks',
       },
       {
         fileName: 'orchard-hillside-view.jpg',
@@ -322,7 +335,7 @@ export const contentSections: readonly ContentSection[] = [
       {
         fileName: 'backyard-snowman-shed.jpg',
         altText: 'A snowman built in the backyard near the garden shed',
-        caption: 'Snow days at home',
+        caption: 'Snow days at home, or sledding in the parks',
         fallbackLabel: 'Backyard snowman',
       },
       {
@@ -357,12 +370,50 @@ export const contentSections: readonly ContentSection[] = [
     ],
   },
   {
+    id: 'parks',
+    navLabel: 'Parks',
+    heading: 'The Jewels of Nutley',
+    intro: `With the warming of the weather comes children's laughter carrying over from the playgrounds and fields.  Couples stroll along the paved paths while others relax on benches. Friends gather at the basketball courts for afterwork games, and families sip their bubble tea, picked up from Ochado on Franklin Street, one of the many awesome places to snack in town.`,
+    background: 'blush',
+    photos: [
+      {
+        fileName: 'nichols-park-path.jpg',
+        altText: 'A paved path winding through the shaded lawn of Nichols Park',
+        caption: 'A quiet path through Nichols Park',
+        fallbackLabel: 'Nichols Park path',
+        externalLink: 'https://www.nutleynj.org/maps/layer/ParksandRecreationLocations',
+      },
+      {
+        fileName: 'nichols-park-willow.jpg',
+        altText: 'A weeping willow and pink blossoming trees at Nichols Park',
+        caption: 'Nichols Park, swept with elegant willows and pretty blossoms',
+        fallbackLabel: 'Nichols Park willow and blossoms',
+      },
+      {
+        fileName: 'memorial-park-spring.jpg',
+        altText: 'A stream lined with white-blossoming trees at Memorial Park',
+        caption: 'Memorial Park in spring bloom',
+        fallbackLabel: 'Memorial Park in spring',
+      },
+      {
+        fileName: 'yanticaw-park-third-river.jpg',
+        altText: 'The Third River winding through the green lawns of Yanticaw Park',
+        caption: 'The Third River winds through Yanticaw Park',
+        fallbackLabel: 'Yanticaw Park and the Third River',
+      },
+      {
+        fileName: 'kingsland-park-manor.jpg',
+        altText: 'The historic Kingsland Manor surrounded by trees in Kingsland Park',
+        caption: 'Historic Kingsland Manor, Kingsland Park',
+        fallbackLabel: 'Kingsland Manor, Kingsland Park',
+      },
+    ],
+  },
+  {
     id: 'food-and-local-spots',
     navLabel: 'Food & Spots',
     heading: 'Food & Local Spots',
-    intro:
-      "With the warming of the weather comes children's laughter, friends gathering, " +
-      'and families sipping tea and bubble tea from one of the many awesome spots in town.',
+    intro: `After play comes an Italian feast at Trattoria Via Veneto or Queen Regina Margherita, or perhaps the locally-famed pizza from Ralph's. Some ice cream from Rita's celebrates the days bringing more sunshine, and Bagel Boy has tomorrow's breakfast covered. Impress the guests next week with brunch at Sugar Tree Cafe or Chestnut Cafe. Mid-afternoon tea? Stop by the Tea Shop (and perhaps the Pie Shop) for something warm, or head to next-door Montclair to try one of the many trendy cafes on Watchung Avenue, a local haven for foodies.`,
     background: 'butter',
     photos: [
       {
