@@ -1,20 +1,24 @@
 /**
- * Resizes and recompresses every *new or changed* photo in public/photos/ in
- * place (keeping each file's original name/extension), then generates two
- * smaller responsive variants of each — "-480w" and "-960w" — plus a
- * generated TypeScript manifest of every variant's real pixel width, so
- * components can build `srcset` attributes instead of always shipping the
- * full ~2000px image even when it's displayed at a fraction of that size
- * (e.g. in the photo grid).
+ * Resizes and recompresses photos in public/photos/ in place (keeping each
+ * file's original name/extension), then generates two smaller responsive
+ * variants of each — "-480w" and "-960w" — plus a generated TypeScript
+ * manifest of every variant's real pixel width, so components can build
+ * `srcset` attributes instead of always shipping the full ~2000px image even
+ * when it's displayed at a fraction of that size (e.g. in the photo grid).
  *
- * Already-optimized photos are skipped on subsequent runs (tracked via
- * photo-optimize-cache.json, keyed by each file's on-disk size right after
- * it was last optimized) — otherwise every run would both waste time
- * reprocessing the whole folder and generation-loss-recompress every JPEG
- * a little more each time. Pass --force to bypass the cache and reprocess
- * everything anyway (e.g. after changing the quality/size constants below).
+ * Usage:
+ *   npm run optimize-photos                     # process every new/changed photo
+ *   npm run optimize-photos -- foo.jpg bar.png   # process only the named photos
+ *   npm run optimize-photos -- --force           # reprocess everything, ignoring the cache
+ *   npm run optimize-photos -- foo.jpg --force   # reprocess just foo.jpg even if cached
  *
- * Run after adding new photos: `npm run optimize-photos`
+ * Already-processed photos are skipped on later runs, tracked by filename (not
+ * file size — two unrelated photos can easily share a byte size, which would
+ * make a size-based cache misidentify one as "already optimized") in
+ * photo-optimize-cache.json. That cache also records every "-480w"/"-960w"
+ * tier file this script has generated, so a full (no-args) run never mistakes
+ * its own previous output for a new source photo — which otherwise silently
+ * multiplies into garbage like "foo-960w-480w.jpg" every run.
  */
 import { readFile, readdir, rename, unlink, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -33,16 +37,14 @@ const webpQuality = 78;
 const pngCompressionLevel = 9;
 
 const SUPPORTED_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.webp'];
-const forceReprocessAll = process.argv.includes('--force');
 
-/**
- * Matches a filename this script itself generated as a responsive tier, e.g.
- * "foo-480w.jpg". Without excluding these from the source scan, a previously
- * generated tier file gets treated as a brand-new source photo on the next
- * run and gets its own "-480w"/"-960w" tiers generated FROM it — silently
- * producing garbage like "foo-960w-480w.jpg" that multiplies every run.
- */
-const isGeneratedTierFile = (fileName) =>
+const cliArgs = process.argv.slice(2);
+const forceReprocess = cliArgs.includes('--force');
+const explicitFileNames = cliArgs.filter((arg) => arg !== '--force');
+
+// Structural safety net alongside the cache's explicit `generatedFiles` list
+// (belt-and-suspenders): matches this script's own "-480w"/"-960w" naming.
+const looksLikeGeneratedTierFile = (fileName) =>
   new RegExp(`-(${responsiveTiers.join('|')})w\\.[a-z0-9]+$`, 'i').test(fileName);
 
 function formatBytes(bytes) {
@@ -53,22 +55,29 @@ function sleep(milliseconds) {
   return new Promise((resolve) => setTimeout(resolve, milliseconds));
 }
 
+function emptyCache() {
+  return { photos: {}, generatedFiles: [] };
+}
+
 async function loadCache() {
   try {
-    return JSON.parse(await readFile(cachePath, 'utf-8'));
+    const parsed = JSON.parse(await readFile(cachePath, 'utf-8'));
+    return { photos: parsed.photos ?? {}, generatedFiles: parsed.generatedFiles ?? [] };
   } catch (error) {
     if (error.code === 'ENOENT') {
-      return {};
+      return emptyCache();
     }
     throw error;
   }
 }
 
 function writeCache(cache) {
-  const sortedEntries = Object.fromEntries(
-    Object.entries(cache).sort(([a], [b]) => a.localeCompare(b)),
+  const sortedPhotos = Object.fromEntries(
+    Object.entries(cache.photos).sort(([a], [b]) => a.localeCompare(b)),
   );
-  return writeFile(cachePath, `${JSON.stringify(sortedEntries, null, 2)}\n`, 'utf-8');
+  const sortedGeneratedFiles = [...new Set(cache.generatedFiles)].sort((a, b) => a.localeCompare(b));
+  const contents = { photos: sortedPhotos, generatedFiles: sortedGeneratedFiles };
+  return writeFile(cachePath, `${JSON.stringify(contents, null, 2)}\n`, 'utf-8');
 }
 
 /**
@@ -120,7 +129,7 @@ async function writeBufferReplacing(buffer, destinationPath) {
   await replaceFile(tempFilePath, destinationPath);
 }
 
-/** Resizes+recompresses the full-size file in place; returns its real width, final on-disk size, and the rotated source buffer for reuse. */
+/** Resizes+recompresses the full-size file in place; returns its real width, byte savings, and the rotated source buffer for reuse. */
 async function optimizeFullSize(filePath, extension) {
   const originalFileBuffer = await readFile(filePath);
   const originalBytes = originalFileBuffer.length;
@@ -148,15 +157,10 @@ async function optimizeFullSize(filePath, extension) {
 
   const fullWidth = (await sharp(fullBuffer).metadata()).width;
   const finalOnDiskBytes = keepsOriginal ? originalBytes : fullBuffer.length;
-  return {
-    rotatedBuffer,
-    fullWidth,
-    finalOnDiskBytes,
-    savedBytes: originalBytes - finalOnDiskBytes,
-  };
+  return { rotatedBuffer, fullWidth, savedBytes: originalBytes - finalOnDiskBytes };
 }
 
-/** Writes a "-{tierWidth}w" variant if the source is wider than that tier (skips pointless upscale-avoided duplicates). */
+/** Writes a "-{tierWidth}w" variant if the source is wider than that tier (skips pointless upscale-avoided duplicates). Returns its generated filename and real width, or null. */
 async function writeResponsiveTier(rotatedBuffer, fullWidth, tierWidth, filePath, extension) {
   if (fullWidth <= tierWidth) {
     return null;
@@ -168,29 +172,29 @@ async function writeResponsiveTier(rotatedBuffer, fullWidth, tierWidth, filePath
   ).toBuffer();
 
   const parsedPath = path.parse(filePath);
-  const tierPath = path.join(parsedPath.dir, `${parsedPath.name}-${tierWidth}w${parsedPath.ext}`);
-  await writeBufferReplacing(tierBuffer, tierPath);
-  return (await sharp(tierBuffer).metadata()).width;
+  const tierFileName = `${parsedPath.name}-${tierWidth}w${parsedPath.ext}`;
+  await writeBufferReplacing(tierBuffer, path.join(parsedPath.dir, tierFileName));
+  const width = (await sharp(tierBuffer).metadata()).width;
+  return { tierFileName, width };
 }
 
 async function optimizeOne(fileName) {
   const filePath = path.join(photosDir, fileName);
   const extension = path.extname(fileName).toLowerCase();
 
-  const { rotatedBuffer, fullWidth, finalOnDiskBytes, savedBytes } = await optimizeFullSize(
-    filePath,
-    extension,
-  );
+  const { rotatedBuffer, fullWidth, savedBytes } = await optimizeFullSize(filePath, extension);
 
   const widths = { full: fullWidth };
+  const generatedFileNames = [];
   for (const tierWidth of responsiveTiers) {
-    const actualWidth = await writeResponsiveTier(rotatedBuffer, fullWidth, tierWidth, filePath, extension);
-    if (actualWidth) {
-      widths[tierWidth] = actualWidth;
+    const tier = await writeResponsiveTier(rotatedBuffer, fullWidth, tierWidth, filePath, extension);
+    if (tier) {
+      widths[tierWidth] = tier.width;
+      generatedFileNames.push(tier.tierFileName);
     }
   }
 
-  return { fileName, savedBytes, widths, finalOnDiskBytes };
+  return { fileName, savedBytes, widths, generatedFileNames };
 }
 
 function writeManifest(widthsByFileName) {
@@ -219,28 +223,57 @@ ${entries}
   return writeFile(manifestPath, contents, 'utf-8');
 }
 
-async function main() {
-  const cache = forceReprocessAll ? {} : await loadCache();
-  const entries = (await readdir(photosDir)).filter(
+/** Every real source photo in the folder, excluding this script's own generated tier files. */
+async function listAllSourcePhotos(cache) {
+  const knownGeneratedFiles = new Set(cache.generatedFiles);
+  const entries = await readdir(photosDir);
+  return entries.filter(
     (fileName) =>
       SUPPORTED_EXTENSIONS.includes(path.extname(fileName).toLowerCase()) &&
-      !isGeneratedTierFile(fileName),
+      !knownGeneratedFiles.has(fileName) &&
+      !looksLikeGeneratedTierFile(fileName),
   );
+}
+
+async function resolveCandidates(cache) {
+  if (explicitFileNames.length === 0) {
+    return { candidates: await listAllSourcePhotos(cache), missing: [] };
+  }
+
+  const candidates = [];
+  const missing = [];
+  for (const fileName of explicitFileNames) {
+    try {
+      await readFile(path.join(photosDir, fileName));
+      candidates.push(fileName);
+    } catch {
+      missing.push(fileName);
+    }
+  }
+  return { candidates, missing };
+}
+
+async function main() {
+  const cache = await loadCache();
+  const { candidates, missing } = await resolveCandidates(cache);
+
+  // Seed with every previously known photo so photos outside this run's
+  // scope (e.g. when explicit filenames were passed) still keep their
+  // manifest entry instead of disappearing from it.
+  const widthsByFileName = { ...cache.photos };
+  const generatedFiles = new Set(cache.generatedFiles);
 
   let totalSaved = 0;
   let processedCount = 0;
   let skippedCount = 0;
-  const failures = [];
-  const widthsByFileName = {};
-  const updatedCache = {};
+  const failures = [...missing];
 
-  for (const fileName of entries) {
-    const currentBytes = (await readFile(path.join(photosDir, fileName))).length;
-    const cached = cache[fileName];
+  for (const name of missing) {
+    console.error(`${name}: FAILED (no such file in public/photos/)`);
+  }
 
-    if (cached && cached.size === currentBytes) {
-      widthsByFileName[fileName] = cached.widths;
-      updatedCache[fileName] = cached;
+  for (const fileName of candidates) {
+    if (!forceReprocess && cache.photos[fileName]) {
       skippedCount += 1;
       continue;
     }
@@ -257,7 +290,7 @@ async function main() {
     totalSaved += result.savedBytes;
     processedCount += 1;
     widthsByFileName[fileName] = result.widths;
-    updatedCache[fileName] = { size: result.finalOnDiskBytes, widths: result.widths };
+    result.generatedFileNames.forEach((name) => generatedFiles.add(name));
 
     const tierList = Object.keys(result.widths)
       .filter((key) => key !== 'full')
@@ -267,14 +300,14 @@ async function main() {
   }
 
   await writeManifest(widthsByFileName);
-  await writeCache(updatedCache);
+  await writeCache({ photos: widthsByFileName, generatedFiles: [...generatedFiles] });
 
   console.log('---');
   console.log(`${processedCount} photos processed, ${skippedCount} already up to date (skipped)`);
   console.log(`Saved ${formatBytes(totalSaved)} on full-size recompression`);
   console.log(`Manifest written to ${path.relative(projectRoot, manifestPath)}`);
   if (failures.length > 0) {
-    console.log(`Failed (re-run the script to retry these): ${failures.join(', ')}`);
+    console.log(`Failed: ${failures.join(', ')}`);
   }
 }
 

@@ -1,1060 +1,932 @@
 {
-  "apple-pie-lattice-1.jpg": {
-    "size": 283230,
-    "widths": {
+  "photos": {
+    "apple-pie-lattice-1.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "apple-pie-lattice-2.jpg": {
-    "size": 302258,
-    "widths": {
+    },
+    "apple-pie-lattice-2.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "apple-pie-lattice-3.jpg": {
-    "size": 224688,
-    "widths": {
+    },
+    "apple-pie-lattice-3.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "apple-pie-leaf-crust.jpg": {
-    "size": 378804,
-    "widths": {
+    },
+    "apple-pie-leaf-crust.jpg": {
       "480": 480,
       "960": 960,
       "full": 1651
-    }
-  },
-  "aquarium-touch-tank-flower-headband.jpg": {
-    "size": 180432,
-    "widths": {
+    },
+    "aquarium-touch-tank-flower-headband.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "backyard-garden-arbor-lavender.jpg": {
-    "size": 623753,
-    "widths": {
+    },
+    "backyard-garden-arbor-lavender.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "backyard-panorama-play-tent.jpg": {
-    "size": 218070,
-    "widths": {
+    },
+    "backyard-panorama-play-tent.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "backyard-patio-furniture-snow.jpg": {
-    "size": 218928,
-    "widths": {
+    },
+    "backyard-patio-furniture-snow.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "backyard-slide-camping-tent.jpg": {
-    "size": 540202,
-    "widths": {
+    },
+    "backyard-slide-camping-tent.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "backyard-snow-arbor-shed.jpg": {
-    "size": 490860,
-    "widths": {
+    },
+    "backyard-snow-arbor-shed.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "backyard-snowman-shed.jpg": {
-    "size": 360964,
-    "widths": {
+    },
+    "backyard-snowman-shed.jpg": {
       "480": 480,
       "960": 960,
       "full": 1506
-    }
-  },
-  "basement-finished-room.jpg": {
-    "size": 212400,
-    "widths": {
+    },
+    "basement-finished-room.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "beach-moonrise.jpg": {
-    "size": 169333,
-    "widths": {
+    },
+    "beach-moonrise.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "beach-sunrise-pier.jpg": {
-    "size": 131240,
-    "widths": {
+    },
+    "beach-sunrise-pier.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "bellevale-ice-cream.jpg": {
-    "size": 109737,
-    "widths": {
+    },
+    "bellevale-ice-cream.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "big-ben.jpg": {
-    "size": 213349,
-    "widths": {
+    },
+    "big-ben.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "branch-brook-cherry-blossoms-4.jpg": {
-    "size": 527888,
-    "widths": {
+    },
+    "branch-brook-cherry-blossoms-4.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "branch-brook-park-cherry-blossom-row.jpg": {
-    "size": 534150,
-    "widths": {
+    },
+    "branch-brook-park-cherry-blossom-row.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "branch-brook-park-trees.jpg": {
-    "size": 608770,
-    "widths": {
+    },
+    "branch-brook-park-trees.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "branch-brook-park-wide-view.jpg": {
-    "size": 548895,
-    "widths": {
+    },
+    "branch-brook-park-wide-view.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "branch-brook-weeping-cherry.jpg": {
-    "size": 628451,
-    "widths": {
+    },
+    "branch-brook-weeping-cherry.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "bronx-zoo.jpg": {
-    "size": 385866,
-    "widths": {
+    },
+    "bronx-zoo.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "butterfly-house-exhibit.jpg": {
-    "size": 326683,
-    "widths": {
+    },
+    "butterfly-house-exhibit.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "byodo-in-temple-japan.jpg": {
-    "size": 510521,
-    "widths": {
+    },
+    "byodo-in-temple-japan.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "cherry-blossom-petals-closeup.jpg": {
-    "size": 255561,
-    "widths": {
+    },
+    "cherry-blossom-petals-closeup.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "cherry-blossoms-closeup-1.jpg": {
-    "size": 198698,
-    "widths": {
+    },
+    "cherry-blossoms-closeup-1.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "cherry-blossoms-closeup-2.jpg": {
-    "size": 276583,
-    "widths": {
+    },
+    "cherry-blossoms-closeup-2.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "cherry-blossoms-macro-1.jpg": {
-    "size": 437109,
-    "widths": {
+    },
+    "cherry-blossoms-macro-1.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "cherry-blossoms-nichols.jpg": {
-    "size": 630980,
-    "widths": {
+    },
+    "cherry-blossoms-nichols.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "chestnut-cafe-exterior-nutley.jpg": {
-    "size": 63212,
-    "widths": {
+    },
+    "chestnut-cafe-exterior-nutley.jpg": {
       "480": 480,
       "full": 720
-    }
-  },
-  "chureito-pagoda-japan-1.jpg": {
-    "size": 504575,
-    "widths": {
+    },
+    "chureito-pagoda-japan-1.jpg": {
       "480": 480,
       "960": 960,
       "full": 1500
-    }
-  },
-  "chureito-pagoda-japan-2.jpg": {
-    "size": 420986,
-    "widths": {
+    },
+    "chureito-pagoda-japan-2.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "color-factory-nyc-wall.jpg": {
-    "size": 154840,
-    "widths": {
+    },
+    "color-factory-nyc-wall.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "crocuses-purple-white.jpg": {
-    "size": 216665,
-    "widths": {
+    },
+    "crocuses-purple-white.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "cruise-balcony-pink-dress.jpg": {
-    "size": 217375,
-    "widths": {
+    },
+    "cruise-balcony-pink-dress.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "cruise-balcony-sunset-tablet.jpg": {
-    "size": 155357,
-    "widths": {
+    },
+    "cruise-balcony-sunset-tablet.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "cruise-ocean-sunset.jpg": {
-    "size": 267353,
-    "widths": {
+    },
+    "cruise-ocean-sunset.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "cruise-ship-odyssey-of-the-seas.jpg": {
-    "size": 264484,
-    "widths": {
+    },
+    "cruise-ship-odyssey-of-the-seas.jpg": {
       "480": 480,
       "960": 960,
       "full": 1783
-    }
-  },
-  "desert-botanical-garden-cactus.jpg": {
-    "size": 414518,
-    "widths": {
+    },
+    "desert-botanical-garden-cactus.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "disneyworld.jpg": {
-    "size": 348528,
-    "widths": {
+    },
+    "disneyworld.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "fairy-garden-tree-stump.jpg": {
-    "size": 511375,
-    "widths": {
+    },
+    "fairy-garden-tree-stump.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "forest-river-gorge.jpg": {
-    "size": 461946,
-    "widths": {
+    },
+    "forest-river-gorge.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "forsythia-yellow-flowers.jpg": {
-    "size": 177628,
-    "widths": {
+    },
+    "forsythia-yellow-flowers.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "garden-baptisia-blue-indigo.jpg": {
-    "size": 242177,
-    "widths": {
+    },
+    "garden-baptisia-blue-indigo.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "garden-bearded-iris.jpg": {
-    "size": 205985,
-    "widths": {
+    },
+    "garden-bearded-iris.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "garden-cherry-tomatoes-bowl.jpg": {
-    "size": 192740,
-    "widths": {
+    },
+    "garden-cherry-tomatoes-bowl.jpg": {
       "480": 480,
       "960": 960,
       "full": 1343
-    }
-  },
-  "garden-cherry-tomatoes-vine.jpg": {
-    "size": 186330,
-    "widths": {
+    },
+    "garden-cherry-tomatoes-vine.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "garden-chive-blossoms-field.jpg": {
-    "size": 208490,
-    "widths": {
+    },
+    "garden-chive-blossoms-field.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "garden-flower-bouquet.jpg": {
-    "size": 324230,
-    "widths": {
+    },
+    "garden-flower-bouquet.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "garden-house-sunflowers.jpg": {
-    "size": 187026,
-    "widths": {
+    },
+    "garden-house-sunflowers.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "garden-purple-sage-flowers-1.jpg": {
-    "size": 258199,
-    "widths": {
+    },
+    "garden-purple-sage-flowers-1.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "garden-purple-sage-flowers-2.jpg": {
-    "size": 337446,
-    "widths": {
+    },
+    "garden-purple-sage-flowers-2.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "garden-shrine-hyacinths-squill.jpg": {
-    "size": 281366,
-    "widths": {
+    },
+    "garden-shrine-hyacinths-squill.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "garden-snap-peas.jpg": {
-    "size": 175133,
-    "widths": {
+    },
+    "garden-snap-peas.jpg": {
       "480": 480,
       "960": 960,
       "full": 1470
-    }
-  },
-  "garden-spicy-peppers.jpg": {
-    "size": 247491,
-    "widths": {
+    },
+    "garden-spicy-peppers.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "garden-squill-flowers-macro.jpg": {
-    "size": 245756,
-    "widths": {
+    },
+    "garden-squill-flowers-macro.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "garden-sunflowers-lavender-pots.jpg": {
-    "size": 641851,
-    "widths": {
+    },
+    "garden-sunflowers-lavender-pots.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "garden-tomatoes-harvest-board.jpg": {
-    "size": 176793,
-    "widths": {
+    },
+    "garden-tomatoes-harvest-board.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "garden-trellises-shed.jpg": {
-    "size": 595157,
-    "widths": {
+    },
+    "garden-trellises-shed.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "golden-gate-bridge.jpg": {
-    "size": 195355,
-    "widths": {
+    },
+    "golden-gate-bridge.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "halloween-minion-display-house-1.jpg": {
-    "size": 576583,
-    "widths": {
+    },
+    "halloween-minion-display-house-1.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "halloween-minion-display-house-2.jpg": {
-    "size": 357544,
-    "widths": {
+    },
+    "halloween-minion-display-house-2.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "harvested-peppers.jpg": {
-    "size": 215860,
-    "widths": {
+    },
+    "harvested-peppers.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "haystack-rock-cannon-beach.jpg": {
-    "size": 256533,
-    "widths": {
+    },
+    "haystack-rock-cannon-beach.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "hot-chocolate-snowman-mugs.jpg": {
-    "size": 297759,
-    "widths": {
+    },
+    "hot-chocolate-snowman-mugs.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "house-chive-blossoms.jpg": {
-    "size": 290593,
-    "widths": {
+    },
+    "house-chive-blossoms.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "house-front-blue-door.jpg": {
-    "size": 347999,
-    "widths": {
+    },
+    "house-front-blue-door.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "house-front-golden-hour.jpg": {
-    "size": 312584,
-    "widths": {
+    },
+    "house-front-golden-hour.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "house-front-liatris-blooms.jpg": {
-    "size": 369473,
-    "widths": {
+    },
+    "house-front-liatris-blooms.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "house-front-tulips-spring.jpg": {
-    "size": 197711,
-    "widths": {
+    },
+    "house-front-tulips-spring.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "house-purple-flowering-shrub.jpg": {
-    "size": 505449,
-    "widths": {
+    },
+    "house-purple-flowering-shrub.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "kingsland-park-manor.jpg": {
-    "size": 82610,
-    "widths": {
+    },
+    "kingsland-park-manor.jpg": {
       "480": 480,
       "full": 640
-    }
-  },
-  "kips-castle-facade.jpg": {
-    "size": 416468,
-    "widths": {
+    },
+    "kips-castle-facade.jpg": {
       "480": 480,
       "960": 960,
       "full": 1500
-    }
-  },
-  "lavender-bee.jpg": {
-    "size": 130415,
-    "widths": {
+    },
+    "lavender-bee.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "legoland-ny-lego-friends-statue.jpg": {
-    "size": 261005,
-    "widths": {
+    },
+    "legoland-ny-lego-friends-statue.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "legoland-ny-statue-of-liberty.jpg": {
-    "size": 214328,
-    "widths": {
+    },
+    "legoland-ny-statue-of-liberty.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "liatris-blazing-star-field.jpg": {
-    "size": 287899,
-    "widths": {
+    },
+    "liatris-blazing-star-field.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "liberty-science-center-trains.jpg": {
-    "size": 226270,
-    "widths": {
+    },
+    "liberty-science-center-trains.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "memorial-park-spring.jpg": {
-    "size": 604489,
-    "widths": {
+    },
+    "memorial-park-spring.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "moma-dali-persistence-of-memory.jpg": {
-    "size": 231634,
-    "widths": {
+    },
+    "moma-dali-persistence-of-memory.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "monte-do-castro-vigo-spain.jpg": {
-    "size": 209193,
-    "widths": {
+    },
+    "monte-do-castro-vigo-spain.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "museum-of-ice-cream-cup.jpg": {
-    "size": 89399,
-    "widths": {
+    },
+    "monto-de-castro-vigo-spain.jpg": {
+      "480": 480,
+      "960": 960,
+      "full": 2000
+    },
+    "museum-of-ice-cream-cup.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "nichols-park-cherry-blossom-path-1.jpg": {
-    "size": 676452,
-    "widths": {
+    },
+    "nichols-park-cherry-blossom-path-1.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "nichols-park-cherry-blossom-path-2.jpg": {
-    "size": 714261,
-    "widths": {
+    },
+    "nichols-park-cherry-blossom-path-2.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "nichols-park-creek-cherry-blossoms.jpg": {
-    "size": 658624,
-    "widths": {
+    },
+    "nichols-park-creek-cherry-blossoms.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "nichols-park-path.jpg": {
-    "size": 546817,
-    "widths": {
+    },
+    "nichols-park-path.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "nichols-park-willow.jpg": {
-    "size": 578052,
-    "widths": {
+    },
+    "nichols-park-willow.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "nyc-skyline-empire-state-1.jpg": {
-    "size": 213843,
-    "widths": {
+    },
+    "nyc-skyline-empire-state-1.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "nyc-skyline-empire-state-2.jpg": {
-    "size": 209720,
-    "widths": {
+    },
+    "nyc-skyline-empire-state-2.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "ochado-bubble-tea-nutley.png": {
-    "size": 450999,
-    "widths": {
+    },
+    "ochado-bubble-tea-nutley.png": {
       "480": 480,
       "full": 533
-    }
-  },
-  "orchard-apple-on-tree-1.jpg": {
-    "size": 261606,
-    "widths": {
+    },
+    "orchard-apple-on-tree-1.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "orchard-apple-on-tree-2.jpg": {
-    "size": 240036,
-    "widths": {
+    },
+    "orchard-apple-on-tree-2.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "orchard-hillside-view.jpg": {
-    "size": 453687,
-    "widths": {
+    },
+    "orchard-hillside-view.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "park-picnic-castle-table-sunflower-game.jpg": {
-    "size": 541279,
-    "widths": {
+    },
+    "park-picnic-castle-table-sunflower-game.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "park-picnic-cherry-blossom-castle-table.jpg": {
-    "size": 507699,
-    "widths": {
+    },
+    "park-picnic-cherry-blossom-castle-table.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "park-tea-tray.jpg": {
-    "size": 256117,
-    "widths": {
+    },
+    "park-tea-tray.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "playground-sunset-cherry-blossoms.jpg": {
-    "size": 434862,
-    "widths": {
+    },
+    "playground-sunset-cherry-blossoms.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "playground-turtle-sculptures-skyline.jpg": {
-    "size": 482952,
-    "widths": {
+    },
+    "playground-turtle-sculptures-skyline.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "pumpkin-carving-jack-o-lantern.jpg": {
-    "size": 135832,
-    "widths": {
+    },
+    "pumpkin-carving-jack-o-lantern.jpg": {
       "480": 480,
       "full": 952
-    }
-  },
-  "pumpkin-painted-decorating.jpg": {
-    "size": 280732,
-    "widths": {
+    },
+    "pumpkin-painted-decorating.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "ramen-kinya-bowl.jpg": {
-    "size": 245310,
-    "widths": {
+    },
+    "ramen-kinya-bowl.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "ravello-italy-coastal-view.jpg": {
-    "size": 419553,
-    "widths": {
+    },
+    "ravello-italy-coastal-view.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "ravello-italy-pine-view.jpg": {
-    "size": 249052,
-    "widths": {
+    },
+    "ravello-italy-pine-view.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "ravello-italy-terrace-garden.jpg": {
-    "size": 252303,
-    "widths": {
+    },
+    "ravello-italy-terrace-garden.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "rhodedendron.jpg": {
-    "size": 241867,
-    "widths": {
+    },
+    "rhodedendron.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "sea-life-aquarium-statue-of-liberty.jpg": {
-    "size": 240275,
-    "widths": {
+    },
+    "sea-life-aquarium-statue-of-liberty.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "sesame-street-big-bird-meetgreet.jpg": {
-    "size": 361362,
-    "widths": {
+    },
+    "sesame-street-big-bird-meetgreet.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "sloomoo-institute-banana-room.jpg": {
-    "size": 214383,
-    "widths": {
+    },
+    "sloomoo-institute-banana-room.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "sloomoo-institute-slime-cups.jpg": {
-    "size": 160624,
-    "widths": {
+    },
+    "sloomoo-institute-slime-cups.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "statue-of-liberty-nyc.jpg": {
-    "size": 191502,
-    "widths": {
+    },
+    "statue-of-liberty-nyc.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "strawberries.jpg": {
-    "size": 300516,
-    "widths": {
+    },
+    "strawberries.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "sugar-tree-cafe-interior-nutley.webp": {
-    "size": 160266,
-    "widths": {
+    },
+    "sugar-tree-cafe-interior-nutley.webp": {
       "480": 480,
       "full": 954
-    }
-  },
-  "summer-fireworks.jpg": {
-    "size": 257478,
-    "widths": {
+    },
+    "summer-fireworks.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "summit-vanderbilt-mirror-room-1.jpg": {
-    "size": 352945,
-    "widths": {
+    },
+    "summit-vanderbilt-mirror-room-1.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "summit-vanderbilt-mirror-room-2.jpg": {
-    "size": 324727,
-    "widths": {
+    },
+    "summit-vanderbilt-mirror-room-2.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "summit-vanderbilt-mirror-room-group.jpg": {
-    "size": 369120,
-    "widths": {
+    },
+    "summit-vanderbilt-mirror-room-group.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "sunflower-field-fence-gate.jpg": {
-    "size": 315246,
-    "widths": {
+    },
+    "sunflower-field-fence-gate.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "sunflower-field-girl.jpg": {
-    "size": 251659,
-    "widths": {
+    },
+    "sunflower-field-girl.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "sunflower-field-wide-view.jpg": {
-    "size": 522499,
-    "widths": {
+    },
+    "sunflower-field-wide-view.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "sushi-hand-rolls.jpg": {
-    "size": 219740,
-    "widths": {
+    },
+    "sushi-hand-rolls.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "taipei-101-dusk.jpg": {
-    "size": 171536,
-    "widths": {
+    },
+    "taipei-101-dusk.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "tea-shop-fireplace.jpg": {
-    "size": 162153,
-    "widths": {
+    },
+    "tea-shop-fireplace.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "thanksgiving-turkey-pie-1.jpg": {
-    "size": 405672,
-    "widths": {
+    },
+    "thanksgiving-turkey-pie-1.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "thanksgiving-turkey-pie-2.jpg": {
-    "size": 426320,
-    "widths": {
+    },
+    "thanksgiving-turkey-pie-2.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "the-oakley-burger-nutley.jpg": {
-    "size": 71070,
-    "widths": {
+    },
+    "the-oakley-burger-nutley.jpg": {
       "480": 480,
       "960": 960,
       "full": 1200
-    }
-  },
-  "trattoria-via-veneto-pasta.jpg": {
-    "size": 193943,
-    "widths": {
+    },
+    "trattoria-via-veneto-pasta.jpg": {
       "480": 480,
       "960": 960,
       "full": 1416
-    }
-  },
-  "tropical-beach-resort.jpg": {
-    "size": 225722,
-    "widths": {
+    },
+    "tropical-beach-resort.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "universal-studios-super-nintendo-world.jpg": {
-    "size": 291678,
-    "widths": {
+    },
+    "universal-studios-super-nintendo-world.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "vancouver-skyline-seawall.jpg": {
-    "size": 226779,
-    "widths": {
+    },
+    "vancouver-skyline-seawall.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
-    }
-  },
-  "yanticaw-park-third-river.jpg": {
-    "size": 97088,
-    "widths": {
+    },
+    "yanticaw-park-third-river.jpg": {
       "480": 480,
       "full": 885
-    }
-  },
-  "zoo-cheetah.jpg": {
-    "size": 188653,
-    "widths": {
+    },
+    "zoo-cheetah.jpg": {
       "480": 480,
       "960": 960,
       "full": 1472
-    }
-  },
-  "zoo-lion-1.jpg": {
-    "size": 554297,
-    "widths": {
+    },
+    "zoo-lion-1.jpg": {
       "480": 480,
       "960": 960,
       "full": 1125
-    }
-  },
-  "zoo-lion-2.jpg": {
-    "size": 522392,
-    "widths": {
+    },
+    "zoo-lion-2.jpg": {
       "480": 480,
       "960": 960,
       "full": 2000
     }
-  }
+  },
+  "generatedFiles": [
+    "apple-pie-lattice-1-480w.jpg",
+    "apple-pie-lattice-1-960w.jpg",
+    "apple-pie-lattice-2-480w.jpg",
+    "apple-pie-lattice-2-960w.jpg",
+    "apple-pie-lattice-3-480w.jpg",
+    "apple-pie-lattice-3-960w.jpg",
+    "apple-pie-leaf-crust-480w.jpg",
+    "apple-pie-leaf-crust-960w.jpg",
+    "aquarium-touch-tank-flower-headband-480w.jpg",
+    "aquarium-touch-tank-flower-headband-960w.jpg",
+    "backyard-garden-arbor-lavender-480w.jpg",
+    "backyard-garden-arbor-lavender-960w.jpg",
+    "backyard-panorama-play-tent-480w.jpg",
+    "backyard-panorama-play-tent-960w.jpg",
+    "backyard-patio-furniture-snow-480w.jpg",
+    "backyard-patio-furniture-snow-960w.jpg",
+    "backyard-slide-camping-tent-480w.jpg",
+    "backyard-slide-camping-tent-960w.jpg",
+    "backyard-snow-arbor-shed-480w.jpg",
+    "backyard-snow-arbor-shed-960w.jpg",
+    "backyard-snowman-shed-480w.jpg",
+    "backyard-snowman-shed-960w.jpg",
+    "basement-finished-room-480w.jpg",
+    "basement-finished-room-960w.jpg",
+    "beach-moonrise-480w.jpg",
+    "beach-moonrise-960w.jpg",
+    "beach-sunrise-pier-480w.jpg",
+    "beach-sunrise-pier-960w.jpg",
+    "bellevale-ice-cream-480w.jpg",
+    "bellevale-ice-cream-960w.jpg",
+    "big-ben-480w.jpg",
+    "big-ben-960w.jpg",
+    "branch-brook-cherry-blossoms-4-480w.jpg",
+    "branch-brook-cherry-blossoms-4-960w.jpg",
+    "branch-brook-park-cherry-blossom-row-480w.jpg",
+    "branch-brook-park-cherry-blossom-row-960w.jpg",
+    "branch-brook-park-trees-480w.jpg",
+    "branch-brook-park-trees-960w.jpg",
+    "branch-brook-park-wide-view-480w.jpg",
+    "branch-brook-park-wide-view-960w.jpg",
+    "branch-brook-weeping-cherry-480w.jpg",
+    "branch-brook-weeping-cherry-960w.jpg",
+    "bronx-zoo-480w.jpg",
+    "bronx-zoo-960w.jpg",
+    "butterfly-house-exhibit-480w.jpg",
+    "butterfly-house-exhibit-960w.jpg",
+    "byodo-in-temple-japan-480w.jpg",
+    "byodo-in-temple-japan-960w.jpg",
+    "cherry-blossom-petals-closeup-480w.jpg",
+    "cherry-blossom-petals-closeup-960w.jpg",
+    "cherry-blossoms-closeup-1-480w.jpg",
+    "cherry-blossoms-closeup-1-960w.jpg",
+    "cherry-blossoms-closeup-2-480w.jpg",
+    "cherry-blossoms-closeup-2-960w.jpg",
+    "cherry-blossoms-macro-1-480w.jpg",
+    "cherry-blossoms-macro-1-960w.jpg",
+    "cherry-blossoms-nichols-480w.jpg",
+    "cherry-blossoms-nichols-960w.jpg",
+    "chestnut-cafe-exterior-nutley-480w.jpg",
+    "chureito-pagoda-japan-1-480w.jpg",
+    "chureito-pagoda-japan-1-960w.jpg",
+    "chureito-pagoda-japan-2-480w.jpg",
+    "chureito-pagoda-japan-2-960w.jpg",
+    "color-factory-nyc-wall-480w.jpg",
+    "color-factory-nyc-wall-960w.jpg",
+    "crocuses-purple-white-480w.jpg",
+    "crocuses-purple-white-960w.jpg",
+    "cruise-balcony-pink-dress-480w.jpg",
+    "cruise-balcony-pink-dress-960w.jpg",
+    "cruise-balcony-sunset-tablet-480w.jpg",
+    "cruise-balcony-sunset-tablet-960w.jpg",
+    "cruise-ocean-sunset-480w.jpg",
+    "cruise-ocean-sunset-960w.jpg",
+    "cruise-ship-odyssey-of-the-seas-480w.jpg",
+    "cruise-ship-odyssey-of-the-seas-960w.jpg",
+    "desert-botanical-garden-cactus-480w.jpg",
+    "desert-botanical-garden-cactus-960w.jpg",
+    "disneyworld-480w.jpg",
+    "disneyworld-960w.jpg",
+    "fairy-garden-tree-stump-480w.jpg",
+    "fairy-garden-tree-stump-960w.jpg",
+    "forest-river-gorge-480w.jpg",
+    "forest-river-gorge-960w.jpg",
+    "forsythia-yellow-flowers-480w.jpg",
+    "forsythia-yellow-flowers-960w.jpg",
+    "garden-baptisia-blue-indigo-480w.jpg",
+    "garden-baptisia-blue-indigo-960w.jpg",
+    "garden-bearded-iris-480w.jpg",
+    "garden-bearded-iris-960w.jpg",
+    "garden-cherry-tomatoes-bowl-480w.jpg",
+    "garden-cherry-tomatoes-bowl-960w.jpg",
+    "garden-cherry-tomatoes-vine-480w.jpg",
+    "garden-cherry-tomatoes-vine-960w.jpg",
+    "garden-chive-blossoms-field-480w.jpg",
+    "garden-chive-blossoms-field-960w.jpg",
+    "garden-flower-bouquet-480w.jpg",
+    "garden-flower-bouquet-960w.jpg",
+    "garden-house-sunflowers-480w.jpg",
+    "garden-house-sunflowers-960w.jpg",
+    "garden-purple-sage-flowers-1-480w.jpg",
+    "garden-purple-sage-flowers-1-960w.jpg",
+    "garden-purple-sage-flowers-2-480w.jpg",
+    "garden-purple-sage-flowers-2-960w.jpg",
+    "garden-shrine-hyacinths-squill-480w.jpg",
+    "garden-shrine-hyacinths-squill-960w.jpg",
+    "garden-snap-peas-480w.jpg",
+    "garden-snap-peas-960w.jpg",
+    "garden-spicy-peppers-480w.jpg",
+    "garden-spicy-peppers-960w.jpg",
+    "garden-squill-flowers-macro-480w.jpg",
+    "garden-squill-flowers-macro-960w.jpg",
+    "garden-sunflowers-lavender-pots-480w.jpg",
+    "garden-sunflowers-lavender-pots-960w.jpg",
+    "garden-tomatoes-harvest-board-480w.jpg",
+    "garden-tomatoes-harvest-board-960w.jpg",
+    "garden-trellises-shed-480w.jpg",
+    "garden-trellises-shed-960w.jpg",
+    "golden-gate-bridge-480w.jpg",
+    "golden-gate-bridge-960w.jpg",
+    "halloween-minion-display-house-1-480w.jpg",
+    "halloween-minion-display-house-1-960w.jpg",
+    "halloween-minion-display-house-2-480w.jpg",
+    "halloween-minion-display-house-2-960w.jpg",
+    "harvested-peppers-480w.jpg",
+    "harvested-peppers-960w.jpg",
+    "haystack-rock-cannon-beach-480w.jpg",
+    "haystack-rock-cannon-beach-960w.jpg",
+    "hot-chocolate-snowman-mugs-480w.jpg",
+    "hot-chocolate-snowman-mugs-960w.jpg",
+    "house-chive-blossoms-480w.jpg",
+    "house-chive-blossoms-960w.jpg",
+    "house-front-blue-door-480w.jpg",
+    "house-front-blue-door-960w.jpg",
+    "house-front-golden-hour-480w.jpg",
+    "house-front-golden-hour-960w.jpg",
+    "house-front-liatris-blooms-480w.jpg",
+    "house-front-liatris-blooms-960w.jpg",
+    "house-front-tulips-spring-480w.jpg",
+    "house-front-tulips-spring-960w.jpg",
+    "house-purple-flowering-shrub-480w.jpg",
+    "house-purple-flowering-shrub-960w.jpg",
+    "kingsland-park-manor-480w.jpg",
+    "kips-castle-facade-480w.jpg",
+    "kips-castle-facade-960w.jpg",
+    "lavender-bee-480w.jpg",
+    "lavender-bee-960w.jpg",
+    "legoland-ny-lego-friends-statue-480w.jpg",
+    "legoland-ny-lego-friends-statue-960w.jpg",
+    "legoland-ny-statue-of-liberty-480w.jpg",
+    "legoland-ny-statue-of-liberty-960w.jpg",
+    "liatris-blazing-star-field-480w.jpg",
+    "liatris-blazing-star-field-960w.jpg",
+    "liberty-science-center-trains-480w.jpg",
+    "liberty-science-center-trains-960w.jpg",
+    "memorial-park-spring-480w.jpg",
+    "memorial-park-spring-960w.jpg",
+    "moma-dali-persistence-of-memory-480w.jpg",
+    "moma-dali-persistence-of-memory-960w.jpg",
+    "monte-do-castro-vigo-spain-480w.jpg",
+    "monte-do-castro-vigo-spain-960w.jpg",
+    "monto-de-castro-vigo-spain-480w.jpg",
+    "monto-de-castro-vigo-spain-960w.jpg",
+    "museum-of-ice-cream-cup-480w.jpg",
+    "museum-of-ice-cream-cup-960w.jpg",
+    "nichols-park-cherry-blossom-path-1-480w.jpg",
+    "nichols-park-cherry-blossom-path-1-960w.jpg",
+    "nichols-park-cherry-blossom-path-2-480w.jpg",
+    "nichols-park-cherry-blossom-path-2-960w.jpg",
+    "nichols-park-creek-cherry-blossoms-480w.jpg",
+    "nichols-park-creek-cherry-blossoms-960w.jpg",
+    "nichols-park-path-480w.jpg",
+    "nichols-park-path-960w.jpg",
+    "nichols-park-willow-480w.jpg",
+    "nichols-park-willow-960w.jpg",
+    "nyc-skyline-empire-state-1-480w.jpg",
+    "nyc-skyline-empire-state-1-960w.jpg",
+    "nyc-skyline-empire-state-2-480w.jpg",
+    "nyc-skyline-empire-state-2-960w.jpg",
+    "ochado-bubble-tea-nutley-480w.png",
+    "orchard-apple-on-tree-1-480w.jpg",
+    "orchard-apple-on-tree-1-960w.jpg",
+    "orchard-apple-on-tree-2-480w.jpg",
+    "orchard-apple-on-tree-2-960w.jpg",
+    "orchard-hillside-view-480w.jpg",
+    "orchard-hillside-view-960w.jpg",
+    "park-picnic-castle-table-sunflower-game-480w.jpg",
+    "park-picnic-castle-table-sunflower-game-960w.jpg",
+    "park-picnic-cherry-blossom-castle-table-480w.jpg",
+    "park-picnic-cherry-blossom-castle-table-960w.jpg",
+    "park-tea-tray-480w.jpg",
+    "park-tea-tray-960w.jpg",
+    "playground-sunset-cherry-blossoms-480w.jpg",
+    "playground-sunset-cherry-blossoms-960w.jpg",
+    "playground-turtle-sculptures-skyline-480w.jpg",
+    "playground-turtle-sculptures-skyline-960w.jpg",
+    "pumpkin-carving-jack-o-lantern-480w.jpg",
+    "pumpkin-painted-decorating-480w.jpg",
+    "pumpkin-painted-decorating-960w.jpg",
+    "ramen-kinya-bowl-480w.jpg",
+    "ramen-kinya-bowl-960w.jpg",
+    "ravello-italy-coastal-view-480w.jpg",
+    "ravello-italy-coastal-view-960w.jpg",
+    "ravello-italy-pine-view-480w.jpg",
+    "ravello-italy-pine-view-960w.jpg",
+    "ravello-italy-terrace-garden-480w.jpg",
+    "ravello-italy-terrace-garden-960w.jpg",
+    "rhodedendron-480w.jpg",
+    "rhodedendron-960w.jpg",
+    "sea-life-aquarium-statue-of-liberty-480w.jpg",
+    "sea-life-aquarium-statue-of-liberty-960w.jpg",
+    "sesame-street-big-bird-meetgreet-480w.jpg",
+    "sesame-street-big-bird-meetgreet-960w.jpg",
+    "sloomoo-institute-banana-room-480w.jpg",
+    "sloomoo-institute-banana-room-960w.jpg",
+    "sloomoo-institute-slime-cups-480w.jpg",
+    "sloomoo-institute-slime-cups-960w.jpg",
+    "statue-of-liberty-nyc-480w.jpg",
+    "statue-of-liberty-nyc-960w.jpg",
+    "strawberries-480w.jpg",
+    "strawberries-960w.jpg",
+    "sugar-tree-cafe-interior-nutley-480w.webp",
+    "summer-fireworks-480w.jpg",
+    "summer-fireworks-960w.jpg",
+    "summit-vanderbilt-mirror-room-1-480w.jpg",
+    "summit-vanderbilt-mirror-room-1-960w.jpg",
+    "summit-vanderbilt-mirror-room-2-480w.jpg",
+    "summit-vanderbilt-mirror-room-2-960w.jpg",
+    "summit-vanderbilt-mirror-room-group-480w.jpg",
+    "summit-vanderbilt-mirror-room-group-960w.jpg",
+    "sunflower-field-fence-gate-480w.jpg",
+    "sunflower-field-fence-gate-960w.jpg",
+    "sunflower-field-girl-480w.jpg",
+    "sunflower-field-girl-960w.jpg",
+    "sunflower-field-wide-view-480w.jpg",
+    "sunflower-field-wide-view-960w.jpg",
+    "sushi-hand-rolls-480w.jpg",
+    "sushi-hand-rolls-960w.jpg",
+    "taipei-101-dusk-480w.jpg",
+    "taipei-101-dusk-960w.jpg",
+    "tea-shop-fireplace-480w.jpg",
+    "tea-shop-fireplace-960w.jpg",
+    "thanksgiving-turkey-pie-1-480w.jpg",
+    "thanksgiving-turkey-pie-1-960w.jpg",
+    "thanksgiving-turkey-pie-2-480w.jpg",
+    "thanksgiving-turkey-pie-2-960w.jpg",
+    "the-oakley-burger-nutley-480w.jpg",
+    "the-oakley-burger-nutley-960w.jpg",
+    "trattoria-via-veneto-pasta-480w.jpg",
+    "trattoria-via-veneto-pasta-960w.jpg",
+    "tropical-beach-resort-480w.jpg",
+    "tropical-beach-resort-960w.jpg",
+    "universal-studios-super-nintendo-world-480w.jpg",
+    "universal-studios-super-nintendo-world-960w.jpg",
+    "vancouver-skyline-seawall-480w.jpg",
+    "vancouver-skyline-seawall-960w.jpg",
+    "yanticaw-park-third-river-480w.jpg",
+    "zoo-cheetah-480w.jpg",
+    "zoo-cheetah-960w.jpg",
+    "zoo-lion-1-480w.jpg",
+    "zoo-lion-1-960w.jpg",
+    "zoo-lion-2-480w.jpg",
+    "zoo-lion-2-960w.jpg"
+  ]
 }
