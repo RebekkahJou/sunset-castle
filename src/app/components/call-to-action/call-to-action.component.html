@@ -6,9 +6,14 @@
       of July watching fireworks from the backyard &mdash; this is the life waiting at 16 Sunset
       Drive. The floor plans, the photos, the tour, and the price are all one click away.
     </p>
-    <a class="cta__button" [href]="listingDetails.listingUrl" target="_blank" rel="noopener"
-      >View the Full Listing</a
-    >
+    <div class="cta__button-row">
+      <a class="cta__button" [href]="listingDetails.listingUrl" target="_blank" rel="noopener"
+        >View the Full Listing</a
+      >
+      <a class="cta__button" [href]="listingDetails.videoTourUrl" target="_blank" rel="noopener"
+        >Watch the Video Tour</a
+      >
+    </div>
     <app-agent-contact-card variant="dark" />
   </div>
 </section>
