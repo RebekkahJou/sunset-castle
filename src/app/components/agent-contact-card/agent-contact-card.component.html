@@ -1,0 +1,16 @@
+<div class="agent-card" [class.agent-card--dark]="variant() === 'dark'">
+  <div class="agent-card__header">
+    <div class="agent-card__identity">
+      <p class="agent-card__name">{{ listingDetails.agentName }}</p>
+      <p class="agent-card__title">{{ listingDetails.agentTitle }}</p>
+    </div>
+    <img class="agent-card__brokerage-logo" src="logos/eXp-Realty-Color.png" alt="eXp Realty" />
+  </div>
+  <p class="agent-card__phone agent-card__phone--office">
+    Office: {{ listingDetails.agentOfficePhone }}
+  </p>
+  <p class="agent-card__phone agent-card__phone--cell">Cell: {{ listingDetails.agentCellPhone }}</p>
+  <div class="agent-card__fair-housing">
+    <img src="logos/equal-housing-logo500.png" alt="Equal Housing Opportunity" />
+  </div>
+</div>

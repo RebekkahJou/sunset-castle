@@ -2,6 +2,8 @@ export interface ListingDetails {
   readonly listingUrl: string;
   readonly videoTourUrl: string;
   readonly agentName: string;
+  readonly agentTitle: string;
   readonly agentBrokerage: string;
-  readonly agentPhone: string;
+  readonly agentCellPhone: string;
+  readonly agentOfficePhone: string;
 }

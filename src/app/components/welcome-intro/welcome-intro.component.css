@@ -60,13 +60,6 @@
   }
 }
 
-.intro__cta-note {
-  margin-top: 0.75rem;
-  font-size: 0.9rem;
-  font-style: normal;
-  color: var(--color-ink-soft);
-}
-
 .intro__photo img {
   width: 100%;
   aspect-ratio: 16 / 9;

@@ -17,8 +17,10 @@ export const listingDetails: ListingDetails = {
   videoTourUrl:
     'https://www.zillow.com/view-imx/4c467c48-3be3-4c79-938f-63da84d1e0a0?setAttribution=mls&wl=true&initialViewType=pano&utm_source=dashboard',
   agentName: 'Roger Nubel',
+  agentTitle: 'Realtor-Associate',
   agentBrokerage: 'eXp Realty',
-  agentPhone: '(201) 527-8997',
+  agentCellPhone: '+1 (201) 527-8997',
+  agentOfficePhone: '+1 (866) 201-6210',
 };
 
 export const contentSections: readonly ContentSection[] = [
@@ -485,7 +487,7 @@ export const contentSections: readonly ContentSection[] = [
     photos: [
       {
         fileName: 'sesame-street-big-bird-meetgreet.jpg',
-        altText: 'A family meet-and-greet with Big Bird',
+        altText: 'A meet-and-greet with Big Bird',
         caption: 'A day at Sesame Place in the American Dream Mall',
         fallbackLabel: 'Sesame Place day trip',
         externalLink: 'https://www.americandream.com/',

@@ -9,9 +9,6 @@
     <a class="cta__button" [href]="listingDetails.listingUrl" target="_blank" rel="noopener"
       >View the Full Listing</a
     >
-    <p class="cta__note">
-      Listed by {{ listingDetails.agentName }}, {{ listingDetails.agentBrokerage }} &middot;
-      {{ listingDetails.agentPhone }}
-    </p>
+    <app-agent-contact-card variant="dark" />
   </div>
 </section>

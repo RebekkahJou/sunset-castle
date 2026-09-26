@@ -1,0 +1,80 @@
+.agent-card {
+  /* inline-block + the parent's own text-align is what centers this card as a
+     unit inside a centered section (the CTA) while still just flowing at the
+     start of the line in a left-aligned one (welcome) — text-align:left below
+     keeps the card's own content left-aligned internally either way. */
+  display: inline-block;
+  text-align: left;
+  margin-top: 1rem;
+  color: var(--color-ink-soft);
+}
+
+.agent-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.agent-card__identity {
+  display: flex;
+  flex-direction: column;
+}
+
+.agent-card__name {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--color-ink);
+}
+
+.agent-card__title {
+  margin: 0;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* Larger than the agent's name, per the brand's own visual hierarchy. */
+.agent-card__brokerage-logo {
+  height: 2.5rem;
+  width: auto;
+}
+
+.agent-card__phone {
+  margin: 0.4rem 0 0;
+  font-style: normal;
+}
+
+.agent-card__phone--office {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.agent-card__phone--cell {
+  font-size: 0.85rem;
+}
+
+.agent-card__fair-housing {
+  display: inline-flex;
+  margin-top: 0.75rem;
+  padding: 0.35rem;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px var(--color-card-shadow);
+}
+
+.agent-card__fair-housing img {
+  height: 2.25rem;
+  width: auto;
+}
+
+/* ---------- Dark variant, for the accent-gradient CTA background ---------- */
+.agent-card--dark {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.agent-card--dark .agent-card__name,
+.agent-card--dark .agent-card__phone--office {
+  color: #fff;
+}

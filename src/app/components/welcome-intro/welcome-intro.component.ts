@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { AgentContactCardComponent } from '../agent-contact-card/agent-contact-card.component';
 import { ImageSkeletonDirective } from '../../directives/image-skeleton.directive';
 import {
   houseAddress,
@@ -12,7 +13,7 @@ import { buildPhotoSrcset, photoPath } from '../../utils/photo-srcset';
 @Component({
   selector: 'app-welcome-intro',
   standalone: true,
-  imports: [ImageSkeletonDirective],
+  imports: [ImageSkeletonDirective, AgentContactCardComponent],
   templateUrl: './welcome-intro.component.html',
   styleUrl: './welcome-intro.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
